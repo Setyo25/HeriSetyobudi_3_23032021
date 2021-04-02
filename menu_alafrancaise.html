@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Menu du restaurant À la française">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./sass/style.css">
     <title>Menu A la française</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -30,62 +30,80 @@
             <div class="restaurant__menu__starter">
             <h3>ENTRÉES</h3>
             <figure class="restaurant__menu__card">
-                <p class="restaurant__menu__name">Tartare de poulpe acidulé</p>
-                <p class="restaurant__menu__ingredient"> Aux zests d'orange</p>
-                <button class="restaurant__menu__price"> 25€</button>
+                <figcaption class="restaurant__menu__text"> 
+                    <p class="restaurant__menu__name">Tartare de poulpe acidulé</p>
+                    <p class="restaurant__menu__ingredient"> Aux zests d'orange</p>
+                <div class="restaurant__menu__price"> 25€</div>
+                </figcaption>
             </figure>
             <figure class="restaurant__menu__card">
-                <p class="restaurant__menu__name">Velouté du légumes d'antan</p>
-                <p class="restaurant__menu__ingredient"> Carotte, panais, topinambour</p>
-                <button class="restaurant__menu__price"> 35€</button>
+                <figcaption class="restaurant__menu__text">
+                    <p class="restaurant__menu__name">Velouté du légumes d'antan</p>
+                    <p class="restaurant__menu__ingredient"> Carotte, panais, topinambour</p>
+                    <div class="restaurant__menu__price"> 35€</div>
+                </figcaption>
             </figure>
             <figure class="restaurant__menu__card">
-                <p class="restaurant__menu__name">Soupe à l'oignon</p>
-                <p class="restaurant__menu__ingredient"> Revisitée</p>
-                <button class="restaurant__menu__price"> 20€</button>
-                <button><i class="fas fa-check-circle"></i></button>
+                <figcaption class="restaurant__menu__text">
+                    <p class="restaurant__menu__name">Soupe à l'oignon</p>
+                    <p class="restaurant__menu__ingredient"> Revisitée</p>
+                    <div class="restaurant__menu__price"> 20€</div>
+                    <div><i class="fas fa-check-circle"></i></div>
+                </figcaption>
             </figure>
             </div>
             <div class="restaurant__menu__maincourse">
                 <h3>PLATS</h3>
                 <figure class="restaurant__menu__card">
-                    <p class="restaurant__menu__name">Coquilles Saint-Jacques</p>
-                    <p class="restaurant__menu__ingredient"> Accompagnées d'une purée de panais</p>
-                    <button class="restaurant__menu__price"> 40€</button>
+                    <figcaption class="restaurant__menu__text">
+                        <p class="restaurant__menu__name">Coquilles Saint-Jacques</p>
+                        <p class="restaurant__menu__ingredient"> Accompagnées d'une purée de panais</p>
+                        <div class="restaurant__menu__price"> 40€</div>
+                    </figcaption>
                 </figure>
                 <figure class="restaurant__menu__card">
-                    <p class="restaurant__menu__name">Magret de canard</p>
-                    <p class="restaurant__menu__ingredient"> Et parmentier de pommes de terres</p>
-                    <button class="restaurant__menu__price"> 35€</button>
+                    <figcaption class="restaurant__menu__text">
+                        <p class="restaurant__menu__name">Magret de canard</p>
+                        <p class="restaurant__menu__ingredient"> Et parmentier de pommes de terres</p>
+                        <div class="restaurant__menu__price"> 35€</div>
+                    </figcaption>
                 </figure>
                 <figure class="restaurant__menu__card">
-                    <p class="restaurant__menu__name">Pigeonneau d'Ille-et-Vilaine</p>
-                    <p class="restaurant__menu__ingredient">Sur son lite de gnocchis aux légumes</p>
-                    <button class="restaurant__menu__price"> 44€</button>
+                    <figcaption class="restaurant__menu__text">
+                        <p class="restaurant__menu__name">Pigeonneau d'Ille-et-Vilaine</p>
+                        <p class="restaurant__menu__ingredient">Sur son lite de gnocchis aux légumes</p>
+                        <div class="restaurant__menu__price"> 44€</div>
+                    </figcaption>
                 </figure>
                 </div>
                 <div class="restaurant__menu__dessert">
                     <h3>DESSERTS</h3>
                     <figure class="restaurant__menu__card">
-                        <p class="restaurant__menu__name">Pétales de violettes glacés</p>
-                        <p class="restaurant__menu__ingredient"> Et purée de noisettes</p>
-                        <button class="restaurant__menu__price"> 18€</button>
+                        <figcaption class="restaurant__menu__text">
+                            <p class="restaurant__menu__name">Pétales de violettes glacés</p>
+                            <p class="restaurant__menu__ingredient"> Et purée de noisettes</p>
+                            <div class="restaurant__menu__price"> 18€</div>
+                        </figcaption>
                     </figure>
                     <figure class="restaurant__menu__card">
-                        <p class="restaurant__menu__name">Fondant de chocolat</p>
-                        <p class="restaurant__menu__ingredient">Revisité</p>
-                        <button class="restaurant__menu__price"> 22€</button>
+                        <figcaption class="restaurant__menu__text">
+                            <p class="restaurant__menu__name">Fondant de chocolat</p>
+                            <p class="restaurant__menu__ingredient">Revisité</p>
+                            <div class="restaurant__menu__price"> 22€</div>
+                        </figcaption>
                     </figure>
                     <figure class="restaurant__menu__card">
-                        <p class="restaurant__menu__name">Millefeuille croustillant</p>
-                        <p class="restaurant__menu__ingredient"> Myrtilles et pâte d'amande</p>
-                        <button class="restaurant__menu__price"> 23€</button>
+                        <figcaption class="restaurant__menu__text">
+                            <p class="restaurant__menu__name">Millefeuille croustillant</p>
+                            <p class="restaurant__menu__ingredient"> Myrtilles et pâte d'amande</p>
+                            <div class="restaurant__menu__price"> 23€</div>
+                        </figcaption>
                     </figure>
                     </div>
             <div class="order">
-                <button class="order__button">
-                    <input type="text" value="Commander">
-                </button>
+                <div class="order__button">
+                    <p>Commander</p>
+                </div>
             </div>
         </div>
     </main>
