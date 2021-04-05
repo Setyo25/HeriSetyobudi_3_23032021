@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
@@ -67,6 +68,28 @@ body {
     padding-left: 35px;
     font-weight: 800;
   }
+  .operation ol {
+    counter-reset: step;
+  }
+  /* on initialise et nomme un compteur */
+  li {
+    list-style-type: none;
+    counter-increment: step;
+    /* on incrémente le compteur à chaque nouveau li */
+  }
+  .operation li:before {
+    position: absolute;
+    margin-top: 14px;
+    margin-left: -24px;
+    content: counter(step);
+    /* on affiche le compteur */
+    padding: 7px 11px 7px 11px;
+    background: #9356DC;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+  }
   #operation__step__one {
     border: 1px solid #f6f6f6;
     background-color: #f6f6f6;
@@ -85,7 +108,6 @@ body {
     padding: 10px;
     border-radius: 30px 30px 30px 30px;
     font-weight: 600;
-    padding: 20px 20px;
   }
   #operation__step__two__icon {
     padding: 20px 20px;
@@ -105,9 +127,11 @@ body {
   .restaurant__container {
     background-color: #eaeaea;
     padding-left: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .restaurant {
-    padding-left: 35px;
+    padding-left: 15px;
     font-weight: 800;
   }
   .restaurant__card {
@@ -164,6 +188,10 @@ body {
   .restaurant__card__heart {
     font-size: 25px;
   }
+  footer {
+    background-color: black;
+    color: white;
+  }
 }
 
 .header {
@@ -175,14 +203,35 @@ body {
           justify-content: center;
 }
 
-.logo {
-  display: block;
+.header h1 {
+  font-family: 'Shrikhand', cursive;
+  color: #000000;
   height: 15px;
   margin-top: 15px;
   margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-.logo__header {
-  height: 20px;
+footer {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 30px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo__footer {
+  font-family: 'Shrikhand', cursive;
+  color: white;
+  padding-left: 40px;
+  padding-top: 20px;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
