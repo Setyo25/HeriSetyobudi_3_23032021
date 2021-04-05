@@ -214,4 +214,96 @@ footer{
     color: white;
     
 }
+/* code pour les menus*/
+.restaurant__alafrancaise{
+    border: 1px;
+    font-size: 13px;
+    width: 480px;
+    height: 300px;  
+    position: relative;
+    background-color: $white;
+}
+.restaurant__alafrancaise__food{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    object-fit: cover;
+}
+.restaurant__menu{
+    background-color: $grey_light;
+    border-radius: 50px 50px 0 0;
+    padding-top: 30px;
+}
+.restaurant__name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.restaurant__name h2{
+    font-family: 'Shrikhand', cursive;
+}
+.restaurant__menu__starter h3{
+    padding-left: 40px;
+}
+.restaurant__menu__maincourse h3{
+    padding-left: 40px;
+}
+.restaurant__menu__dessert h3{
+    padding-left: 40px;
+}
+.restaurant__menu__card{
+    border: 1px solid $grey;
+    width: 370px;
+    height: 83px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $white;
+    border-radius: 30px 30px 30px 30px;
+}
+.restaurant__menu__text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.restaurant__menu__name{
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.restaurant__menu__ingredient{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.restaurant__menu__price{
+    font-weight: 700;
+}
+.restaurant__menu__ingredientandprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.order__button{
+    border: 1px solid $primary-color;
+    border-radius: 45px 45px 45px 45px;
+    background-color: $primary-color;
+    padding: 10px 50px 10px 50px;
+}
+.order__button p{
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
 }

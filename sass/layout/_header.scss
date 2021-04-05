@@ -1,6 +1,7 @@
-.header{
+header{
     display: flex;
     justify-content: center;
+    align-content: center;
     
 }
 .header h1{
@@ -10,4 +11,7 @@
     margin-top: 15px;
     margin-bottom: 20px;
     padding-bottom: 20px;
+}
+.arrow__back{
+    padding-top: 30px;
 }
