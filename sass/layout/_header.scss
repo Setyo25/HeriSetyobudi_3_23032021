@@ -1,9 +1,16 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 header h1{
     font-family: 'Shrikhand', cursive;
     color: $black;
     height: 15px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    text-align: center;
+}
+#arrow__back{
+    padding-top: 33px;
+    margin-left: -78px;
 }

@@ -4,6 +4,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .home {
+    padding-top: 25px;
+  }
   .home__location {
     background-color: #eaeaea;
     display: -webkit-box;
@@ -122,9 +125,13 @@ body {
   }
   .restaurant__container {
     background-color: #eaeaea;
-    padding-left: 35px;
+    padding-left: 0px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .restaurant__menu {
+    position: relative;
+    top: -92px;
   }
   .restaurant {
     padding-left: 15px;
@@ -134,7 +141,7 @@ body {
     border: 1px;
     border-radius: 15px 15px 15px 15px;
     font-size: 13px;
-    width: 400px;
+    width: 300px;
     height: 240px;
     margin-left: 10px;
     margin-right: 10px;
@@ -308,14 +315,31 @@ body {
   }
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header h1 {
   font-family: 'Shrikhand', cursive;
   color: #000000;
   height: 15px;
-  margin-top: 15px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  text-align: center;
+}
+
+#arrow__back {
+  padding-top: 33px;
+  margin-left: -78px;
 }
 
 footer {
