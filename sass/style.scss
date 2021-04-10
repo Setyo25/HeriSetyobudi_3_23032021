@@ -1,5 +1,7 @@
-@import"./pages/menu";
-@import"./pages/home";
-@import"./layout/header";
-@import"./layout/footer";
 @import"./utils/variables"; 
+@import"./utils/mixin";
+@import"./utils/animations";
+@import"./layout/header";
+@import"./pages/home";
+@import"./pages/menu";
+@import"./layout/footer";

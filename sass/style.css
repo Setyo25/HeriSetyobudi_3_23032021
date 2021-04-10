@@ -1,9 +1,87 @@
-body {
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
+.btn {
+  border: 1px solid black;
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover::after {
+  opacity: 1;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 50px 50px 50px 50px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ff60d3;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
+}
+
+.restaurant__card__heart {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.restaurant__card__heart__empty {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.restaurant__card__heart__full {
+  z-index: 1;
+  color: #FF79DA;
+  opacity: 1;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  font-family: 'Shrikhand', cursive;
+  color: #000000;
+  height: 15px;
+  padding-bottom: 20px;
+}
+
+#arrow__back {
+  padding-top: 33px;
+  margin-left: -78px;
+  padding-bottom: 20px;
 }
 
 @media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
   .home {
     padding-top: 25px;
   }
@@ -57,13 +135,13 @@ body {
     width: 350px;
     text-align: center;
   }
-  .home__introduction__explore {
+  .home__explore {
     border: 1px solid #9356DC;
     border-radius: 45px 45px 45px 45px;
     background-color: #9356DC;
     padding: 6px 15px 6px 15px;
   }
-  .home__introduction__explore__text {
+  .home__explore__text {
     color: #ffffff;
   }
   .operation__introduction {
@@ -149,6 +227,7 @@ body {
     margin-top: 30px;
     position: relative;
     background-color: #ffffff;
+    cursor: pointer;
   }
   .restaurant__card__image {
     width: 100%;
@@ -195,127 +274,38 @@ body {
     background-color: black;
     color: white;
   }
-  /* code pour les menus*/
-  .restaurant__container {
-    border: 1px;
-    font-size: 13px;
-    width: 480px;
-    height: 300px;
-    position: relative;
-    background-color: #ffffff;
-  }
-  .restaurant__container__image {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .restaurant__menu {
-    background-color: #f6f6f6;
-    border-radius: 50px 50px 0 0;
-    padding-top: 30px;
-  }
-  .restaurant__name {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .restaurant__name h2 {
-    font-family: 'Shrikhand', cursive;
-  }
-  .restaurant__menu__starter h3 {
-    padding-left: 40px;
-  }
-  .restaurant__menu__maincourse h3 {
-    padding-left: 40px;
-  }
-  .restaurant__menu__dessert h3 {
-    padding-left: 40px;
-  }
-  .restaurant__menu__card {
-    border: 1px solid #eaeaea;
-    width: 370px;
-    height: 83px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #ffffff;
-    border-radius: 30px 30px 30px 30px;
-  }
-  .restaurant__menu__text {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .restaurant__menu__name {
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .restaurant__menu__ingredient {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  .restaurant__menu__price {
-    font-weight: 700;
-  }
-  .restaurant__menu__ingredientandprice {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .order {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  .order__button {
-    border: 1px solid #9356DC;
-    border-radius: 45px 45px 45px 45px;
-    background-color: #9356DC;
-    padding: 10px 50px 10px 50px;
-  }
-  .order__button p {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 500;
-  }
 }
 
-header {
+body {
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+/* code pour les menus*/
+.restaurant__mainpage {
+  border: 1px;
+  font-size: 13px;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+}
+
+.restaurant__mainpage__image {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant__menu {
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  padding-top: 30px;
+}
+
+.restaurant__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,23 +313,107 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.restaurant__name h2 {
+  font-family: 'Shrikhand', cursive;
+}
+
+.restaurant__menu__starter h3 {
+  padding-left: 40px;
+}
+
+.restaurant__menu__maincourse h3 {
+  padding-left: 40px;
+}
+
+.restaurant__menu__dessert h3 {
+  padding-left: 40px;
+}
+
+.restaurant__menu__card {
+  border: 1px solid #eaeaea;
+  width: 75%;
+  height: 83px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #ffffff;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.restaurant__menu__text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.restaurant__menu__name {
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.restaurant__menu__ingredient {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.restaurant__menu__price {
+  font-weight: 700;
+}
+
+.restaurant__menu__ingredientandprice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
-header h1 {
-  font-family: 'Shrikhand', cursive;
-  color: #000000;
-  height: 15px;
+.order__button {
+  border: 1px solid #9356DC;
+  border-radius: 45px 45px 45px 45px;
+  background-color: #9356DC;
+  padding: 10px 50px 10px 50px;
 }
 
-#arrow__back {
-  padding-top: 33px;
-  margin-left: -78px;
+.order__button p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 footer {
