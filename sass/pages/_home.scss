@@ -68,7 +68,7 @@ li {
 	font-size: 0.8em;
 	color: white;
 }
-#operation__step__one{
+.operation__step{
     border:1px solid $grey_light;
     background-color: $grey_light;
     margin: 20px 20px;
@@ -79,18 +79,11 @@ li {
 #operation__step__one__icon{
     padding: 20px 20px;
 }
-#operation__step__two{
-    border:1px solid $grey_light;
-    background-color: $grey_light;
-    margin: 20px 20px;
-    padding: 10px;
-    border-radius: 30px 30px 30px 30px;
-    font-weight: 600;
-}
+
 #operation__step__two__icon{
     padding: 20px 20px;
 }
-#operation__step__three{
+.operation__step__pink{
     border:1px solid $pink_light;
     background-color: $pink_light;
     margin: 20px 20px;
@@ -166,6 +159,4 @@ footer{
     color: white;
     
 }
-
-
 }

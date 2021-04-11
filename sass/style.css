@@ -1,49 +1,13 @@
-.btn {
-  border: 1px solid black;
-  border-radius: 50px 50px 50px 50px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  position: relative;
-  z-index: 1;
-}
-
-.btn:hover::after {
-  opacity: 1;
-}
-
-.btn::after {
-  content: "";
-  position: absolute;
-  border-radius: 50px 50px 50px 50px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #ff60d3;
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: opacity 250ms;
-  transition: opacity 250ms;
-}
-
-.restaurant__card__heart {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-}
-
 .restaurant__card__heart__empty {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  opacity: 1;
+  opacity: 0;
+  z-index: -1;
   color: #ffffff;
 }
 
-.restaurant__card__heart__full {
+.restaurant__card__heart__full :hover {
   z-index: 1;
   color: #FF79DA;
   opacity: 1;
@@ -167,7 +131,7 @@ header h1 {
     font-size: 0.8em;
     color: white;
   }
-  #operation__step__one {
+  .operation__step {
     border: 1px solid #f6f6f6;
     background-color: #f6f6f6;
     margin: 20px 20px;
@@ -178,18 +142,10 @@ header h1 {
   #operation__step__one__icon {
     padding: 20px 20px;
   }
-  #operation__step__two {
-    border: 1px solid #f6f6f6;
-    background-color: #f6f6f6;
-    margin: 20px 20px;
-    padding: 10px;
-    border-radius: 30px 30px 30px 30px;
-    font-weight: 600;
-  }
   #operation__step__two__icon {
     padding: 20px 20px;
   }
-  #operation__step__three {
+  .operation__step__pink {
     border: 1px solid #f5edff;
     background-color: #f5edff;
     margin: 20px 20px;
