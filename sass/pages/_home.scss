@@ -42,6 +42,7 @@ body{
     border-radius: 45px 45px 45px 45px;
     background-color: $primary-color;
     padding: 6px 15px 6px 15px;
+    box-shadow:6px 6px 6px $grey_grey;
 }
 .home__explore__text{
     color: $white;
@@ -75,6 +76,7 @@ li {
     padding: 10px;
     border-radius: 30px 30px 30px 30px;
     font-weight: 600;
+    box-shadow:6px 6px 6px $grey_grey;
 }
 #operation__step__one__icon{
     padding: 20px 20px;
@@ -90,6 +92,7 @@ li {
     padding: 10px;
     border-radius: 30px 30px 30px 30px;
     font-weight: 600;
+    box-shadow:6px 6px 6px $grey_grey;
 }
 #operation__step__three__icon{
     padding: 20px 20px;
