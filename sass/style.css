@@ -17,91 +17,99 @@
   cursor: pointer;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 1000ms ease-in-out;
-  transition: all 1000ms ease-in-out;
+  -webkit-transition: all 1000ms ease-out;
+  transition: all 1000ms ease-out;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .fa-heart:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   background-clip: text;
+  color: transparent;
   -webkit-background-clip: text;
+  -webkit-background: content-box;
+  border-radius: 50%;
+  height: 0.9em;
+  width: 0.9em;
   color: #FF79DA;
-  background-color: violet;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 .restaurant__menu__starter .restaurant__menu__card {
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
   -webkit-animation: progress-bar 1000ms;
           animation: progress-bar 1000ms;
 }
 
 .restaurant__menu__maincourse .restaurant__menu__card {
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
   -webkit-animation: progress-bar 1000ms 300ms;
           animation: progress-bar 1000ms 300ms;
 }
 
 .restaurant__menu__dessert .restaurant__menu__card {
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
   -webkit-animation: progress-bar 1000ms 600ms;
           animation: progress-bar 1000ms 600ms;
 }
 
 @-webkit-keyframes progress-bar {
   0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     opacity: 0;
   }
   20% {
-    -webkit-transform: scaleX(0.18);
-            transform: scaleX(0.18);
+    -webkit-transform: scaleY(0.18);
+            transform: scaleY(0.18);
   }
   40% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
   }
   60% {
-    -webkit-transform: scaleX(0.81);
-            transform: scaleX(0.81);
+    -webkit-transform: scaleY(0.81);
+            transform: scaleY(0.81);
   }
   80%, 100% {
     opacity: 1;
   }
   100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 
 @keyframes progress-bar {
   0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     opacity: 0;
   }
   20% {
-    -webkit-transform: scaleX(0.18);
-            transform: scaleX(0.18);
+    -webkit-transform: scaleY(0.18);
+            transform: scaleY(0.18);
   }
   40% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4);
   }
   60% {
-    -webkit-transform: scaleX(0.81);
-            transform: scaleX(0.81);
+    -webkit-transform: scaleY(0.81);
+            transform: scaleY(0.81);
   }
   80%, 100% {
     opacity: 1;
   }
   100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 
