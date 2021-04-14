@@ -32,24 +32,24 @@
     }
 
 .restaurant__menu__starter {
-    .restaurant__menu__card{
-        transform-origin: bottom;
+    
+        transform-origin: top;
         animation: progress-bar 1000ms;
-    }
+
 }
 
 .restaurant__menu__maincourse {
-    .restaurant__menu__card{
-        transform-origin: bottom;
+    
+        transform-origin: top;
         animation: progress-bar 1000ms 300ms;
-    }
+    
 }
 
 .restaurant__menu__dessert {
-    .restaurant__menu__card{
-        transform-origin: bottom;
+    
+        transform-origin: top;
         animation: progress-bar 1000ms 600ms;
-    }
+    
 }
 
 @keyframes progress-bar{

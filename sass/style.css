@@ -38,23 +38,23 @@
   background: linear-gradient(#9356DC, #FF79DA);
 }
 
-.restaurant__menu__starter .restaurant__menu__card {
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+.restaurant__menu__starter {
+  -webkit-transform-origin: top;
+          transform-origin: top;
   -webkit-animation: progress-bar 1000ms;
           animation: progress-bar 1000ms;
 }
 
-.restaurant__menu__maincourse .restaurant__menu__card {
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+.restaurant__menu__maincourse {
+  -webkit-transform-origin: top;
+          transform-origin: top;
   -webkit-animation: progress-bar 1000ms 300ms;
           animation: progress-bar 1000ms 300ms;
 }
 
-.restaurant__menu__dessert .restaurant__menu__card {
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+.restaurant__menu__dessert {
+  -webkit-transform-origin: top;
+          transform-origin: top;
   -webkit-animation: progress-bar 1000ms 600ms;
           animation: progress-bar 1000ms 600ms;
 }
