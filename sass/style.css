@@ -10,25 +10,13 @@
           box-shadow: #353535;
 }
 
-.restaurant__menu__card__heart {
+.empty {
   font-size: 30px;
 }
 
-.restaurant__card__heart__empty {
-  position: absolute;
-  opacity: 1;
-  z-index: -1;
-  color: #ffffff;
-}
-
-.restaurant__card__heart__full :hover {
-  z-index: 1;
-  color: #FF79DA;
-  opacity: 1;
-  -webkit-transition: -webkit-transform 400ms ease;
-  transition: -webkit-transform 400ms ease;
-  transition: transform 400ms ease;
-  transition: transform 400ms ease, -webkit-transform 400ms ease;
+.empty:hover {
+  background-clip: text;
+  background-color: linear-gradient red blue;
 }
 
 .restaurant__menu__starter .restaurant__menu__card {
@@ -132,7 +120,7 @@
   font-size: 20px;
 }
 
-.restaurant__menu__card__test {
+.restaurant__menu__card {
   border: 1px solid #eaeaea;
   width: 75%;
   height: 83px;
@@ -178,7 +166,7 @@
           align-items: center;
 }
 
-.restaurant__menu__text__test {
+.restaurant__menu__text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

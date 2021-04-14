@@ -8,22 +8,12 @@
     box-shadow:$grey_dark;
 }
 
-.restaurant__menu__card__heart{
+.empty{
     font-size: 30px;
-}
-.restaurant__card__heart__empty{
-    position: absolute;
-    opacity: 1;
-    z-index: -1;
-    color:$white;
-}
-.restaurant__card__heart__full :hover{
-    z-index: 1;
-    color: $secondary-color;
-    opacity: 1;
-    transition: transform 400ms ease;
-    
-
+    &:hover{
+        background-clip: text;
+        background-color: linear-gradient (red blue);
+    }
 }
 
 .restaurant__menu__starter {
