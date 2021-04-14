@@ -8,17 +8,27 @@
     box-shadow:$grey_dark;
 }
 
-.empty{
-    font-size: 30px;
-    &:hover{
-        background-clip: text;
-        background-color: linear-gradient (red blue);
+
+.fa-heart{
+        font-size: 30px;
+        color: black;
+        background: transparent;
+        cursor: pointer;
+        transform: scale(1);
+        transition: all 1000ms ease-in-out;
+        &:hover{
+            transform: scale(1.5);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color:$secondary-color;
+            background-color: violet;
+
+        }
     }
-}
 
 .restaurant__menu__starter {
     .restaurant__menu__card {
-        transform-origin: left;
+        transform-origin: bottom center;
         animation: progress-bar 1000ms;
 
     }

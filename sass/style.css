@@ -10,18 +10,29 @@
           box-shadow: #353535;
 }
 
-.empty {
+.fa-heart {
   font-size: 30px;
+  color: black;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1000ms ease-in-out;
+  transition: all 1000ms ease-in-out;
 }
 
-.empty:hover {
+.fa-heart:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
   background-clip: text;
-  background-color: linear-gradient red blue;
+  -webkit-background-clip: text;
+  color: #FF79DA;
+  background-color: violet;
 }
 
 .restaurant__menu__starter .restaurant__menu__card {
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
   -webkit-animation: progress-bar 1000ms;
           animation: progress-bar 1000ms;
 }
