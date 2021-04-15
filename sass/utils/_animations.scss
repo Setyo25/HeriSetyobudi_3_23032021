@@ -12,20 +12,24 @@
 .fa-heart{
         font-size: 30px;
         color: black;
-        background: transparent;
+        background-clip: padding-box;
+        background-color: transparent;
+        color: black;
         cursor: pointer;
         transform: scale(1);
         transition: all 1000ms ease-out;
         transform-origin: bottom;
         &:hover{
             transform: scale(1.5);
+            background-position: center;
+            background-size: cover;
             background-clip: text;
             color:transparent;
             -webkit-background-clip: text;
-            -webkit-background: content-box;
+            -webkit-background: padding-box;
             border-radius: 50%;
-            height: 0.9em;
-            width: 0.9em;
+            height: 0.85em;
+            width: 0.95em;
             color:$secondary-color;
             background:linear-gradient($primary-color, $secondary-color)
         }
@@ -84,14 +88,32 @@
     align-items: center;
     margin-top: -39px;
     margin-right: -20px;
-    
+    visibility: hidden;
 }
+.restaurant__menu__card:hover{
+    .restaurant__menu__checked{
+        visibility: visible;
+        transform: translateX(-50px);
+        animation-name:menu__checked;
+    }
+}
+
 .fa-check-circle{
     color:$white;
-    transform: rotate(-1 turn);
-    font-size: 20px;
-    
+    font-size: 20px;    
 }
+
+@keyframes menu__checked{
+    0%{ transform: scaleX(0);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+
 .restaurant__menu__card{
     border: 1px solid $grey;
     width: 75%;

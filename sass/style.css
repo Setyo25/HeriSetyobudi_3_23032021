@@ -13,7 +13,9 @@
 .fa-heart {
   font-size: 30px;
   color: black;
-  background: transparent;
+  background-clip: padding-box;
+  background-color: transparent;
+  color: black;
   cursor: pointer;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -26,13 +28,15 @@
 .fa-heart:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+  background-position: center;
+  background-size: cover;
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
-  -webkit-background: content-box;
+  -webkit-background: padding-box;
   border-radius: 50%;
-  height: 0.9em;
-  width: 0.9em;
+  height: 0.85em;
+  width: 0.95em;
   color: #FF79DA;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
@@ -130,13 +134,46 @@
           align-items: center;
   margin-top: -39px;
   margin-right: -20px;
+  visibility: hidden;
+}
+
+.restaurant__menu__card:hover .restaurant__menu__checked {
+  visibility: visible;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-animation-name: menu__checked;
+          animation-name: menu__checked;
 }
 
 .fa-check-circle {
   color: #ffffff;
-  -webkit-transform: rotate(-1 turn);
-          transform: rotate(-1 turn);
   font-size: 20px;
+}
+
+@-webkit-keyframes menu__checked {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes menu__checked {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
 }
 
 .restaurant__menu__card {
