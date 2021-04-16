@@ -122,13 +122,15 @@
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
     &:hover{
+        width: 270px;
+        cursor: pointer;
+        text-overflow: ellipsis;
         .restaurant__menu__checked{
             transform: translateX(-70px);
-            visibility: visible;
+            transition: transform 1000ms ease-in-out;
         }
-        .restaurant__menu__ingredientandprice{
-            width: 292px;
-        }
+        
+        
     }
 }
 .restaurant__menu__text{
@@ -146,16 +148,12 @@
 }
 .restaurant__menu__price{
     font-weight: 700;
+    padding-right: 10px;
 }
 .restaurant__menu__ingredientandprice{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.restaurant__menu__text{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 

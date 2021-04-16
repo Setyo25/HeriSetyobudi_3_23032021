@@ -184,14 +184,19 @@
   overflow: hidden;
 }
 
+.restaurant__menu__card:hover {
+  width: 270px;
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+
 .restaurant__menu__card:hover .restaurant__menu__checked {
   -webkit-transform: translateX(-70px);
           transform: translateX(-70px);
-  visibility: visible;
-}
-
-.restaurant__menu__card:hover .restaurant__menu__ingredientandprice {
-  width: 292px;
+  -webkit-transition: -webkit-transform 1000ms ease-in-out;
+  transition: -webkit-transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
 }
 
 .restaurant__menu__text {
@@ -212,6 +217,7 @@
 
 .restaurant__menu__price {
   font-weight: 700;
+  padding-right: 10px;
 }
 
 .restaurant__menu__ingredientandprice {
@@ -228,12 +234,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.restaurant__menu__text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 header {
