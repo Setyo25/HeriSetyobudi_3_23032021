@@ -200,7 +200,18 @@
 }
 
 .restaurant__menu__card:hover .restaurant__menu__text {
-  width: 278px;
+  width: 285px;
+}
+
+.restaurant__menu__card:hover .fa-check-circle {
+  color: #ffffff;
+  font-size: 20px;
+  -webkit-transform: rotate(2turn);
+          transform: rotate(2turn);
+  -webkit-transition: -webkit-transform 750ms ease-out 250ms;
+  transition: -webkit-transform 750ms ease-out 250ms;
+  transition: transform 750ms ease-out 250ms;
+  transition: transform 750ms ease-out 250ms, -webkit-transform 750ms ease-out 250ms;
 }
 
 .restaurant__menu__text {

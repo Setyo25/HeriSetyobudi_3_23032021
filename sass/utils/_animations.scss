@@ -129,9 +129,16 @@
             overflow: hidden;
         }
         .restaurant__menu__text{
-            width : 278px;
+            width : 285px;
+            
         }
-        
+        .fa-check-circle{
+            color:$white;
+            font-size: 20px;    
+            transform: rotate(2turn);
+            transition: transform 750ms ease-out 250ms;
+
+        }
     }
 }
 .restaurant__menu__text{
