@@ -136,12 +136,6 @@
   margin-left: 366px;
 }
 
-.restaurant__menu__card:hover .restaurant__menu__checked {
-  visibility: visible;
-  -webkit-animation-name: menu__checked;
-          animation-name: menu__checked;
-}
-
 .fa-check-circle {
   color: #ffffff;
   font-size: 20px;
@@ -175,7 +169,7 @@
 
 .restaurant__menu__card {
   border: 1px solid #eaeaea;
-  width: 75%;
+  width: 343px;
   height: 83px;
   padding-left: 20px;
   padding-right: 20px;
@@ -185,7 +179,7 @@
 }
 
 .restaurant__menu__card:hover {
-  width: 270px;
+  width: 343px;
   cursor: pointer;
   text-overflow: ellipsis;
 }
@@ -197,6 +191,16 @@
   transition: -webkit-transform 1000ms ease-in-out;
   transition: transform 1000ms ease-in-out;
   transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+}
+
+.restaurant__menu__card:hover .restaurant__menu__ingredient {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.restaurant__menu__card:hover .restaurant__menu__text {
+  width: 278px;
 }
 
 .restaurant__menu__text {

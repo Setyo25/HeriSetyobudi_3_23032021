@@ -89,12 +89,6 @@
     margin-top: -78px;
     margin-left: 366px;
 }
-.restaurant__menu__card:hover{
-    .restaurant__menu__checked{
-        visibility: visible;
-        animation-name:menu__checked;
-    }
-}
 
 .fa-check-circle{
     color:$white;
@@ -114,7 +108,7 @@
 
 .restaurant__menu__card{
     border: 1px solid $grey;
-    width: 75%;
+    width: 343px;
     height: 83px;
     padding-left: 20px;
     padding-right: 20px;
@@ -122,14 +116,21 @@
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
     &:hover{
-        width: 270px;
+        width: 343px;
         cursor: pointer;
         text-overflow: ellipsis;
         .restaurant__menu__checked{
             transform: translateX(-70px);
             transition: transform 1000ms ease-in-out;
         }
-        
+        .restaurant__menu__ingredient{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .restaurant__menu__text{
+            width : 278px;
+        }
         
     }
 }
