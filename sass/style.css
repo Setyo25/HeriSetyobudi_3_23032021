@@ -132,15 +132,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -39px;
-  margin-right: -20px;
-  visibility: hidden;
+  margin-top: -78px;
+  margin-left: 366px;
 }
 
 .restaurant__menu__card:hover .restaurant__menu__checked {
   visibility: visible;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
   -webkit-animation-name: menu__checked;
           animation-name: menu__checked;
 }
@@ -184,6 +181,17 @@
   padding-right: 20px;
   background-color: #ffffff;
   border-radius: 30px 30px 30px 30px;
+  overflow: hidden;
+}
+
+.restaurant__menu__card:hover .restaurant__menu__checked {
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
+  visibility: visible;
+}
+
+.restaurant__menu__card:hover .restaurant__menu__ingredientandprice {
+  width: 292px;
 }
 
 .restaurant__menu__text {
