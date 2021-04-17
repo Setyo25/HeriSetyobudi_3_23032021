@@ -10,6 +10,69 @@
           box-shadow: #353535;
 }
 
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
+
+.loader__spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 10px solid #9356DC;
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: spin 3s linear 3s 10;
+          animation: spin 3s linear 3s 10;
+}
+
+.loader__spinner__1 {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+
+.loader__spinner__2 {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
+}
+
+.loader__spinner__3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate 0deg;
+            transform: rotate 0deg;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate 0deg;
+            transform: rotate 0deg;
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .fa-heart {
   font-size: 30px;
   color: black;
