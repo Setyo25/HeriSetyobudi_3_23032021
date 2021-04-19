@@ -79,34 +79,29 @@ $anim-dure:3s;
     }
 }
 
-
-
-
-
-.fa-heart{
-        font-size: 30px;
-        color: black;
-        background-clip: padding-box;
-        background-color: transparent;
-        color: black;
-        cursor: pointer;
-        transform: scale(1);
-        transition: all 1000ms ease-out;
-        transform-origin: bottom;
-        &:hover{
-            transform: scale(1.5);
-            background-position: center;
-            background-size: cover;
-            background-clip: text;
-            color:transparent;
-            -webkit-background-clip: text;
-            -webkit-background: padding-box;
-            border-radius: 50%;
-            height: 0.85em;
-            width: 0.95em;
-            color:$secondary-color;
-            background:linear-gradient($primary-color, $secondary-color)
-        }
+.restaurant__card__heart{
+    font-size: 30px;
+}
+.empty{
+    position:relative;
+  }
+.full{
+    position:absolute;
+    right: 25px;
+    bottom: 22px;
+    opacity:0;
+  }
+  
+.empty:hover{
+      opacity:0;
+    }
+  .full:hover{
+      opacity:1;
+      color:linear-gradient(#e66465, #9198e5);
+      background:linear-gradient($primary-color, $secondary-color);
+      background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
 
 .restaurant__menu__starter {
