@@ -14,6 +14,9 @@
     <link rel="icon" href="./Maquettes_Ohmyfood/images/logo/ohmyfood@2x.svg">
 </head>
 <body>
+    <div class="loader">
+        <div class="loader__spinner"></div>
+    </div>
     <header>
         <div class="header">
                 <h1>ohmyfood</h1>
@@ -28,13 +31,11 @@
             <div class="home__introduction">
                 <p class="home__introduction__quote">Réservez le menu qui vous convient</p>
                 <p class="home__introduction__presentation">Découvrez des restaurants d'éxception, séléctionnés par nos soins</p>
-                <button class="home__explore">
+                <div class="home__explore">
                     <p class="home__explore__text">Explorer nos restaurants</p>
-                </button>
+                </div>
             </div>
-            <div class="loader">
-                <div class="loader__spinner loader__spinner__1"></div>
-            </div>
+            
 
             
         </div>
@@ -52,7 +53,7 @@
             <div class="restaurant__container">
                 <p class="restaurant">Restaurants</p>
                 <div class="restaurant__list" >
-                    <figure onclick="document.location='menu_lapalettedugout.html'" target="_blank" class="restaurant__card" >
+                    <figure class="restaurant__card" >
                         <img class="restaurant__card__image" src="./Maquettes_Ohmyfood/images/restaurants/plat_lapalettedugout.jpg" alt="Plat du restaurant La palette du goût">
                             <div class="restaurant__card__new">
                                 <p>Nouveau</p>

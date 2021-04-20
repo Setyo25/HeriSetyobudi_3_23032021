@@ -1,11 +1,11 @@
 .home__explore:hover{
     background-color:$pink_pink ;
-    box-shadow:$grey_dark;
+    box-shadow: 10px 5px 5px;
 }
 
 .home__explore:hover{
     background-color:$pink_pink ;
-    box-shadow:$grey_dark;
+    box-shadow: 10px 5px 5px;
 }
 
 $anim-dure:3s;
@@ -13,10 +13,25 @@ $anim-dure:3s;
 .loader{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:center;
     margin-bottom: 75px;
     margin-top: 75px;
+    position: relative;
+    animation: spinner $anim-dure;
+}
 
+@keyframes spinner {
+    0%{ 
+        transform: scale(1);
+        opacity: 1;
+        
+
+    }
+    100%{
+        transform: scale(0);
+        opacity: 0;
+        z-index: -1000;
+    }
 }
 
 .loader__spinner{
@@ -25,9 +40,9 @@ $anim-dure:3s;
     border-radius: 100px;
     border: 6px solid transparent;
     border-top-color:$primary-color;
-    animation: rond 3s linear $anim-dure 10;
+    animation: rond 1s linear $anim-dure 10;
     position: relative;
-    -webkit-animation: rond 3s linear $anim-dure infinite;
+    -webkit-animation: rond 1s linear $anim-dure infinite;
     
 }
 .loader__spinner::after{
@@ -40,9 +55,8 @@ $anim-dure:3s;
     border-radius: 50px;
     border: 6px solid transparent;
     border-top-color:$secondary-color;
-    opacity: 0.8;
-    animation: rond 6s linear $anim-dure 10;
-    -webkit-animation: rond 6s linear $anim-dure infinite;
+    animation: rond 1.5s linear $anim-dure 10;
+    -webkit-animation: rond 1.5s linear $anim-dure infinite;
 }
 .loader__spinner::before{
     content: "";
@@ -54,18 +68,8 @@ $anim-dure:3s;
     border-radius: 50px;
     border: 6px solid transparent;
     border-top-color:$grey_grey;
-    opacity: 0.8;
-    animation: rond 9s linear $anim-dure infinite;
-    -webkit-animation: rond 9s linear $anim-dure infinite;
-}
-.loader__spinner__1{
-    animation-delay: 0ms;
-}
-.loader__spinner__2{
-    animation-delay: 150ms;
-}
-.loader__spinner__3{
-    animation-delay: 300ms;
+    animation: rond 2s linear $anim-dure infinite;
+    -webkit-animation: rond 2s linear $anim-dure infinite;
 }
 
 @keyframes rond{
@@ -97,11 +101,7 @@ $anim-dure:3s;
     }
   .full:hover{
       opacity:1;
-      color:linear-gradient(#e66465, #9198e5);
-      background:linear-gradient($primary-color, $secondary-color);
-      background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+      color:$primary-color;
     }
 
 .restaurant__menu__starter {
