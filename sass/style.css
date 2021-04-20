@@ -140,6 +140,10 @@
 .full:hover {
   opacity: 1;
   color: #9356DC;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
 }
 
 .restaurant__menu__starter {

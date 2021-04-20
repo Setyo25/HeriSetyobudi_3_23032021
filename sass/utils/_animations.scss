@@ -102,6 +102,8 @@ $anim-dure:3s;
   .full:hover{
       opacity:1;
       color:$primary-color;
+      transform:scale(1.1);
+      transition-duration:(1000ms);
     }
 
 .restaurant__menu__starter {
