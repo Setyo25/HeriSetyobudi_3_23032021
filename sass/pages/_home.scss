@@ -40,7 +40,7 @@ body{
 .home__explore{
     border: 1px solid $primary-color;
     border-radius: 45px 45px 45px 45px;
-    background-color: $primary-color;
+    background: linear-gradient($primary-color, $secondary-color);
     padding: 6px 15px 6px 15px;
     box-shadow:6px 6px 6px $grey_grey;
 }

@@ -45,7 +45,7 @@
     border-radius: 100px;
     border: 6px solid transparent;
     border-top-color:$primary-color;
-    animation: rond 3s, spin 0s 3s forwards;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
     position: relative;    
 }
 .loading__spinner::after{
@@ -59,7 +59,7 @@
     border: 6px solid transparent;
     border-top-color:$secondary-color;
     animation-duration: 3s;
-    animation: rond 3s, spin 0s 3s forwards;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
 }
 .loading__spinner::before{
     content: "";
@@ -71,7 +71,7 @@
     border-radius: 50px;
     border: 6px solid transparent;
     border-top-color:$grey_grey;
-    animation: rond 3s, spin 0s 3s forwards;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
 }
 
 @keyframes apparition{
@@ -122,10 +122,41 @@ footer{
     }
   .full:hover{
       opacity:1;
-      color:$primary-color;
       transform:scale(1.1);
       transition-duration:(1000ms);
+      background-clip: text;
+      color:transparent;
+      background: -webkit-linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+    
+    .restaurant__menu__heart{
+        font-size: 30px;
+    }
+    .like{
+        position:relative;
+      }
+    .love{
+        position:absolute;
+        right: 30px;
+        top: 52px;
+        opacity:0;
+      }
+      
+    .like:hover{
+          opacity:0;
+        }
+      .love:hover{
+          opacity:1;
+          transform:scale(1.1);
+          transition-duration:(1000ms);
+          background-clip: text;
+          color:transparent;
+          background: -webkit-linear-gradient($primary-color, $secondary-color);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
 
 .restaurant__menu__starter {
     
