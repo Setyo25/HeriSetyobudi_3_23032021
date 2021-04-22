@@ -121,43 +121,41 @@ footer{
       opacity:0;
     }
   .full:hover{
-      opacity:1;
-      transform:scale(1.1);
-      transition-duration:(1000ms);
-      background-clip: text;
-      color:transparent;
-      background: -webkit-linear-gradient($primary-color, $secondary-color);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+.restaurant__menu__heart{
+    font-size: 30px;
+    }
+.like{
+    position:relative;
+  }
+.love{
+    position:absolute;
+    right: 30px;
+    top: 53px;
+    opacity:0;
+    }
+.like:hover{
+    opacity:0;
+      }
+.love:hover{
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
     
-    .restaurant__menu__heart{
-        font-size: 30px;
-    }
-    .like{
-        position:relative;
-      }
-    .love{
-        position:absolute;
-        right: 30px;
-        top: 52px;
-        opacity:0;
-      }
-      
-    .like:hover{
-          opacity:0;
-        }
-      .love:hover{
-          opacity:1;
-          transform:scale(1.1);
-          transition-duration:(1000ms);
-          background-clip: text;
-          color:transparent;
-          background: -webkit-linear-gradient($primary-color, $secondary-color);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
 .restaurant__menu__starter {
     
         transform-origin: top;
