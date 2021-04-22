@@ -132,24 +132,18 @@
 }
 
 header {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-  -webkit-animation: apparition 10s;
-          animation: apparition 10s;
+  -webkit-animation: apparition 5s;
+          animation: apparition 5s;
 }
 
 main {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-  -webkit-animation: apparition 10s;
-          animation: apparition 10s;
+  -webkit-animation: apparition 5s;
+          animation: apparition 5s;
 }
 
 footer {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-  -webkit-animation: apparition 10s;
-          animation: apparition 10s;
+  -webkit-animation: apparition 5s;
+          animation: apparition 5s;
 }
 
 .restaurant__card__heart {
@@ -195,7 +189,7 @@ footer {
 .love {
   position: absolute;
   right: 30px;
-  top: 55px;
+  top: 53px;
   opacity: 0;
 }
 
@@ -217,24 +211,30 @@ footer {
 }
 
 .restaurant__menu__starter {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-animation: progress-bar 1000ms;
-          animation: progress-bar 1000ms;
+  -webkit-animation: progress-bar 1s;
+          animation: progress-bar 1s;
 }
 
 .restaurant__menu__maincourse {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-animation: progress-bar 1000ms 300ms;
-          animation: progress-bar 1000ms 300ms;
+  -webkit-animation: progress-bar 1.5s 300ms;
+          animation: progress-bar 1.5s 300ms;
 }
 
 .restaurant__menu__dessert {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-animation: progress-bar 1000ms 600ms;
-          animation: progress-bar 1000ms 600ms;
+  -webkit-animation: progress-bar 2s 600ms;
+          animation: progress-bar 2s 600ms;
 }
 
 @-webkit-keyframes progress-bar {
@@ -293,7 +293,7 @@ footer {
 
 .restaurant__menu__checked {
   height: 83px;
-  width: 70px;
+  width: 0%;
   border: 1px solid green;
   border-radius: 0 30px 30px 0;
   background-color: green;
@@ -306,13 +306,15 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -78px;
-  margin-left: 366px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .fa-check-circle {
   color: #ffffff;
   font-size: 20px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 @-webkit-keyframes menu__checked {
@@ -343,38 +345,49 @@ footer {
 
 .restaurant__menu__card {
   border: 1px solid #eaeaea;
-  width: 343px;
+  width: 100%;
   height: 83px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 0px;
   background-color: #ffffff;
   border-radius: 30px 30px 30px 30px;
   overflow: hidden;
 }
 
 .restaurant__menu__card:hover {
-  width: 343px;
+  width: 100%;
   cursor: pointer;
   text-overflow: ellipsis;
 }
 
 .restaurant__menu__card:hover .restaurant__menu__checked {
-  -webkit-transform: translateX(-70px);
-          transform: translateX(-70px);
+  width: 20%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-transition: -webkit-transform 1000ms ease-in-out;
   transition: -webkit-transform 1000ms ease-in-out;
   transition: transform 1000ms ease-in-out;
   transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
 }
 
+.restaurant__menu__card:hover .fa-check-circle {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .restaurant__menu__card:hover .restaurant__menu__ingredient {
+  width: 75%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .restaurant__menu__card:hover .restaurant__menu__text {
-  width: 285px;
+  width: 75%;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .restaurant__menu__card:hover .fa-check-circle {
@@ -389,17 +402,33 @@ footer {
 }
 
 .restaurant__menu__text {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .restaurant__menu__name {
+  width: 80%;
   font-weight: 700;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 
 .restaurant__menu__ingredient {
+  width: 80%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -407,6 +436,16 @@ footer {
 .restaurant__menu__price {
   font-weight: 700;
   padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .restaurant__menu__ingredientandprice {
@@ -423,6 +462,10 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.restaurant__menu__nameingredientandprice {
+  width: 100%;
 }
 
 header {
