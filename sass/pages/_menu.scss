@@ -43,37 +43,7 @@ body{
 .restaurant__menu__dessert h3{
     padding-left: 40px;
 }
-.restaurant__menu__card{
-    border: 1px solid $grey;
-    width: 75%;
-    height: 83px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: $white;
-    border-radius: 30px 30px 30px 30px;
-}
-.restaurant__menu__text{
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.restaurant__menu__name{
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.restaurant__menu__ingredient{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.restaurant__menu__price{
-    font-weight: 700;
-}
-.restaurant__menu__ingredientandprice{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .order{
     display: flex;
     flex-direction: column;
