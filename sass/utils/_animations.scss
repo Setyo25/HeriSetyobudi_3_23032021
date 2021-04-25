@@ -234,9 +234,10 @@ footer{
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
     &:hover{
-        width: 100%;
+        width: 79%;
         cursor: pointer;
         text-overflow: ellipsis;
+        padding-right: 0px;
         .restaurant__menu__checked{
             width:20%;
             transform: scale(1);
@@ -247,19 +248,19 @@ footer{
             transform: scale(1);  
         }
         .restaurant__menu__ingredient{
-            width:75%;
+            width:70%;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         .restaurant__menu__name{
-            width:75%;
+            width:70%;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
         }
         .restaurant__menu__text{
-            width : 75%;
+            width : 100%;
             padding-top: 0px;
             padding-bottom: 0px;
             

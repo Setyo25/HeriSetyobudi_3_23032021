@@ -355,9 +355,10 @@ footer {
 }
 
 .restaurant__menu__card:hover {
-  width: 100%;
+  width: 79%;
   cursor: pointer;
   text-overflow: ellipsis;
+  padding-right: 0px;
 }
 
 .restaurant__menu__card:hover .restaurant__menu__checked {
@@ -378,21 +379,21 @@ footer {
 }
 
 .restaurant__menu__card:hover .restaurant__menu__ingredient {
-  width: 75%;
+  width: 70%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .restaurant__menu__card:hover .restaurant__menu__name {
-  width: 75%;
+  width: 70%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .restaurant__menu__card:hover .restaurant__menu__text {
-  width: 75%;
+  width: 100%;
   padding-top: 0px;
   padding-bottom: 0px;
 }
