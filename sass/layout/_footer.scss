@@ -33,3 +33,42 @@ footer ul{
 }
 
 }
+
+@media (min-width: 930px) and (max-width: 1024px) {
+
+    footer{
+        width: 100%;
+    }
+    .logo__footer{
+        text-align: center;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    }
+@media (min-width: 481px) and (max-width: 929px) {
+
+    footer{
+        background-color:$grey_dark;
+        color: white;
+        padding-bottom: 30px;
+        }
+    footer ul{
+        list-style: none;
+        }
+    footer ul li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .logo__footer{
+        font-family: 'Shrikhand', cursive;
+        color: white;
+        padding-left: 40px;
+        padding-top: 20px;
+        font-size: 1.5rem;
+    }
+}
