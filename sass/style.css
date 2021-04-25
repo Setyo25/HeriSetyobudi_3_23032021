@@ -395,6 +395,7 @@ footer {
 .restaurant__menu__card:hover .restaurant__menu__text {
   width: 100%;
   padding: 0px;
+  height: 80px;
 }
 
 .restaurant__menu__card:hover .fa-check-circle {
@@ -410,6 +411,7 @@ footer {
 
 .restaurant__menu__text {
   width: 100%;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,7 +436,7 @@ footer {
 }
 
 .restaurant__menu__ingredient {
-  width: 80%;
+  width: 84%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -784,8 +786,8 @@ body {
 }
 
 .restaurant__menu__text {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .restaurant__menu__name {
