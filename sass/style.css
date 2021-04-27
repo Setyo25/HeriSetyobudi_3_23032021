@@ -409,7 +409,7 @@ header h1 {
   padding-bottom: 20px;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   header {
     width: 100%;
     position: relative;
@@ -652,7 +652,7 @@ header h1 {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   /* mesures pour desktop */
   body {
     width: 100%;
@@ -1472,7 +1472,7 @@ header h1 {
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
@@ -2002,7 +2002,7 @@ footer ul li {
   font-size: 1.5rem;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) {
   footer {
     width: 100%;
   }
