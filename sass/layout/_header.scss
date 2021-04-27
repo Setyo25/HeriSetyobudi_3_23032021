@@ -1,3 +1,4 @@
+
 header{
     display: flex;
     flex-direction: row;
@@ -16,3 +17,42 @@ header h1{
     margin-left: -78px;
     padding-bottom: 20px;
 }
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+header{
+width: 100%;
+position:relative
+}
+#arrow__back{
+    position: absolute;
+    top:5px;
+    left:100px;
+}
+
+}
+@media (min-width: 930px) and (max-width: 1024px) {
+
+    header{
+    width: 100%;
+    position:relative
+    }
+    #arrow__back{
+        position: absolute;
+        top:5px;
+        left:100px;
+    }
+    
+    }
+@media (min-width: 481px) and (max-width: 929px) {
+
+        header{
+        width: 100%;
+        position:relative
+        }
+        #arrow__back{
+            position: absolute;
+            top:5px;
+            left:100px;
+        }
+        
+        }
