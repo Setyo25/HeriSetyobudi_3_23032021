@@ -1369,6 +1369,21 @@ header h1 {
         -ms-flex-align: center;
             align-items: center;
   }
+  .restaurant__menu__cardlist__quatre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   .restaurant__menu__starter h3 {
     padding-left: 40px;
   }
@@ -1522,8 +1537,7 @@ header h1 {
     font-family: 'Shrikhand', cursive;
   }
   .restaurant__menu__card {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 10px;
   }
   .restaurant__menu__cardlist {
     display: -webkit-box;
