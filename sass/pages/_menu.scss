@@ -120,21 +120,259 @@ body{
 }
 }
 
-@media (min-width:1025px){
 
+@media (min-width:481px) and (max-width:929px){
 body{
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     width: 100%;
 }
-main{
-    width:100%
-}
+        
+    /* code pour les menus*/
 .restaurant__mainpage{
     border: 1px;
     font-size: 13px;
     width: 100%;  
-    height: 550px;
+    position: relative;
+    background-color: $white;
+    }
+.restaurant__mainpage__image{
+    width: 100%;
+    height: 340px;
+    margin: 0px;
+    object-fit: cover;
+    }
+.restaurant__menu{
+    background-color: $grey_light;
+    border-radius: 50px 50px 0 0;
+    padding-top: 30px;
+    }
+.restaurant__name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+.restaurant__name h2{
+    font-family: 'Shrikhand', cursive;
+    }
+.restaurant__menu__card{
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+.restaurant__menu__cardlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.restaurant__menu__cardlist__quatre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+.restaurant__menu__starter h3{
+    padding-left: 40px;
+    }
+.restaurant__menu__maincourse h3{
+    padding-left: 40px;
+    }
+.restaurant__menu__dessert h3{
+    padding-left: 40px;
+    }       
+.restaurant__menu__text{
+    width:100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    }
+.restaurant__menu__name{
+    width:80%;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+.restaurant__menu__ingredient{
+    width:84%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+.restaurant__menu__price{
+    font-weight: 700;
+    padding-right: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+.restaurant__menu__ingredientandprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+.restaurant__menu__nameingredientandprice{
+    width:100%;
+    }
+.order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    }
+.order__button{
+    border: 1px solid $primary-color;
+    border-radius: 45px 45px 45px 45px;
+    background:linear-gradient($primary-color, $secondary-color);
+    padding: 10px 50px 10px 50px;
+    }
+.order__button p{
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    }
+    }
+@media (min-width:930px) and (max-width:1024px){
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    }
+        
+    /* code pour les menus*/
+.restaurant__mainpage{
+    border: 1px;
+    font-size: 13px;
+    width: 100%;  
+    position: relative;
+    background-color: $white;
+    }
+.restaurant__mainpage__image{
+    width: 100%;
+    height: 340px;
+    margin: 0px;
+    object-fit: cover;
+    }
+.restaurant__menu{
+    background-color: $grey_light;
+    border-radius: 50px 50px 0 0;
+    padding-top: 30px;
+    }
+    .restaurant__name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+    .restaurant__name h2{
+    font-family: 'Shrikhand', cursive;
+    }
+    .restaurant__menu__card{
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+    .restaurant__menu__cardlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .restaurant__menu__cardlist__quatre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
+    .restaurant__menu__starter h3{
+    text-align: center;
+    }
+    .restaurant__menu__maincourse h3{
+    text-align: center;
+    }
+    .restaurant__menu__dessert h3{
+    text-align: center;
+    }
+.restaurant__menu__text{
+    width:100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    }
+.restaurant__menu__name{
+    width:80%;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+.restaurant__menu__ingredient{
+    width:84%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+.restaurant__menu__price{
+    font-weight: 700;
+    padding-right: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    }
+.restaurant__menu__ingredientandprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+.restaurant__menu__nameingredientandprice{
+    width:100%;
+    }
+.order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    }
+.order__button{
+    border: 1px solid $primary-color;
+    border-radius: 45px 45px 45px 45px;
+    background:linear-gradient($primary-color, $secondary-color);
+    padding: 10px 50px 10px 50px;
+    }
+.order__button p{
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    }
+    }
+                
+        
+@media (min-width:1025px) and (max-width:2000px){
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+/* code pour les menus*/
+.restaurant__mainpage{
+    border: 1px;
+    font-size: 13px;
+    width: 100%;  
     position: relative;
     background-color: $white;
 }
@@ -161,23 +399,28 @@ main{
     font-family: 'Shrikhand', cursive;
 }
 .restaurant__menu__card{
-    margin:10px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .restaurant__menu__cardlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurant__menu__cardlist__quatre{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-
 .restaurant__menu__starter h3{
-    padding-left: 40px;
+    text-align: center;
 }
 .restaurant__menu__maincourse h3{
-    padding-left: 40px;
+    text-align: center;
 }
 .restaurant__menu__dessert h3{
-    padding-left: 40px;
+    text-align: center;
 }
 
 
@@ -239,125 +482,8 @@ main{
     font-weight: 500;
 }
 }
-@media (min-width:930px) and (max-width:1024px){
-    body{
-        margin: 0px;
-        font-family: 'Roboto', sans-serif;
-        width: 100%;
-    }
-    main{
-        width:100%
-    }
-    .restaurant__mainpage{
-        border: 1px;
-        font-size: 13px;
-        width: 100%;  
-        height: 550px;
-        position: relative;
-        background-color: $white;
-    }
-    .restaurant__mainpage__image{
-        width: 100%;
-        height: 340px;
-        margin: 0px;
-        object-fit: cover;
-    }
-    .restaurant__menu{
-        background-color: $grey_light;
-        border-radius: 50px 50px 0 0;
-        padding-top: 30px;
-    }
-    .restaurant__name{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .restaurant__name h2{
-        font-family: 'Shrikhand', cursive;
-    }
-    .restaurant__menu__card{
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .restaurant__menu__cardlist{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .restaurant__menu__starter h3{
-        padding-left: 40px;
-    }
-    .restaurant__menu__maincourse h3{
-        padding-left: 40px;
-    }
-    .restaurant__menu__dessert h3{
-        padding-left: 40px;
-    }
-    
-    
-    .restaurant__menu__text{
-        width:100%;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 0px;
-    }
-    .restaurant__menu__name{
-        width:80%;
-        font-weight: 700;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .restaurant__menu__ingredient{
-        width:84%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .restaurant__menu__price{
-        font-weight: 700;
-        padding-right: 10px;
-        display:flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .restaurant__menu__ingredientandprice{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .restaurant__menu__nameingredientandprice{
-        width:100%;
-    }
-    .order{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 30px;
-        padding-bottom: 50px;
-    }
-    .order__button{
-        border: 1px solid $primary-color;
-        border-radius: 45px 45px 45px 45px;
-        background:linear-gradient($primary-color, $secondary-color);
-        padding: 10px 50px 10px 50px;
-    }
-    .order__button p{
-        color: $white;
-        font-size: 18px;
-        font-weight: 500;
-    }
-}
-@media (min-width:481px) and (max-width:929px){
+
+@media (min-width:2001px)and (max-width:2560px){
     body{
         margin: 0px;
         font-family: 'Roboto', sans-serif;
@@ -403,14 +529,20 @@ main{
         flex-direction: column;
         align-items: center;
     }
+    .restaurant__menu__cardlist__quatre{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
     .restaurant__menu__starter h3{
-        padding-left: 40px;
+        text-align: center;
     }
     .restaurant__menu__maincourse h3{
-        padding-left: 40px;
+        text-align: center;
     }
     .restaurant__menu__dessert h3{
-        padding-left: 40px;
+        text-align: center;
     }
     
     
@@ -472,3 +604,6 @@ main{
         font-weight: 500;
     }
     }
+            
+    
+        

@@ -1,28 +1,24 @@
+@media (max-width:480px){
 .home__explore:hover{
     background-color:$pink_pink ;
     box-shadow: 10px 5px 5px;
 }
-
 .home__explore:hover{
     background-color:$pink_pink ;
     box-shadow: 10px 5px 5px;
 }
-
 @keyframes rond{
     0%{
         transform: rotate(0deg);
-
     }
     100%{
         transform: rotate(720deg);
         opacity: 0;
-
     }
 }
 @keyframes spin{
     0%{
         opacity: 1;
-
     }
     100%{
         opacity: 0;
@@ -37,7 +33,6 @@
     justify-content:center;
     align-items: center;
     position: fixed;
-     
 }
 .loading__spinner{
     width: 100px;
@@ -73,7 +68,6 @@
     border-top-color:$grey_grey;
     animation: rond 3s, spin 0s 3s ease-out forwards;
 }
-
 @keyframes apparition{
     0%{
         opacity: 0;
@@ -81,10 +75,8 @@
     }
     100%{
         opacity: 1;
-
     }
 }
-
 header{
     animation: apparition 5s;  
 }
@@ -95,12 +87,6 @@ footer{
     animation: apparition 5s;
 
 }
-
-
-
-
-
-
 .restaurant__card__heart{
     font-size: 30px;
 }
@@ -112,8 +98,7 @@ footer{
     right: 25px;
     bottom: 22px;
     opacity:0;
-  }
-  
+  } 
 .empty:hover{
       opacity:0;
     }
@@ -151,29 +136,22 @@ footer{
     background: -webkit-linear-gradient($primary-color, $secondary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    }
-    
+    }    
 .restaurant__menu__starter {
         animation-delay:10s;
         transform-origin: top;
         animation: progress-bar 1s;
-
 }
-
 .restaurant__menu__maincourse {
         animation-delay: 10s;
         transform-origin: top;
         animation: progress-bar 1.5s 300ms;
-    
 }
-
 .restaurant__menu__dessert {
         animation-delay: 10s;
         transform-origin: top;
-        animation: progress-bar 2s 600ms;
-    
+        animation: progress-bar 2s 600ms;   
 }
-
 @keyframes progress-bar{
     0% {
         transform: scaleY(0);
@@ -196,13 +174,11 @@ footer{
     align-items: center;
     transform:translateX(100px)
 }
-
 .fa-check-circle{
     color:$white;
     font-size: 20px;  
     transform: scale(0);  
 }
-
 @keyframes menu__checked{
     0%{ transform: scaleX(0);
         opacity: 0;
@@ -213,7 +189,6 @@ footer{
         opacity: 1;
     }
 }
-
 .restaurant__menu__card{
     border: 1px solid $grey;
     width: 90%;
@@ -235,14 +210,724 @@ footer{
             transition: transform 1000ms ease-in-out;
         }
         .fa-check-circle{  
-            transform: scale(1);  
+            color:$white;
+            font-size: 20px;    
+            transform: rotate(2turn);
+            transition: transform 750ms ease-out 250ms; 
         }
         .restaurant__menu__ingredient{
             width:70%;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            
         }
+        .restaurant__menu__name{
+            width:70%;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .restaurant__menu__text{
+            width : 100%;
+            height: 80px;
+        }
+    
+    }
+}
+}
+
+@media (min-width:481px) and (max-width:929px){
+    .home__explore:hover{
+        background-color:$pink_pink ;
+        box-shadow: 10px 5px 5px;
+    }
+    .home__explore:hover{
+        background-color:$pink_pink ;
+        box-shadow: 10px 5px 5px;
+    }
+    @keyframes rond{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(720deg);
+            opacity: 0;
+        }
+    }
+    @keyframes spin{
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+    .loading{
+        opacity: 1;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        position: fixed;
+    }
+    .loading__spinner{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        border: 6px solid transparent;
+        border-top-color:$primary-color;
+        animation: rond 3s, spin 0s 3s ease-out forwards;
+        position: relative;    
+    }
+    .loading__spinner::after{
+        content: "";
+        position: absolute;
+        top:5px;
+        left:5px;
+        bottom:5px;
+        right:5px;
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top-color:$secondary-color;
+        animation-duration: 3s;
+        animation: rond 3s, spin 0s 3s ease-out forwards;
+    }
+    .loading__spinner::before{
+        content: "";
+        position: absolute;
+        top:17px;
+        left:17px;
+        bottom:17px;
+        right:17px;
+        border-radius: 50px;
+        border: 6px solid transparent;
+        border-top-color:$grey_grey;
+        animation: rond 3s, spin 0s 3s ease-out forwards;
+    }
+    @keyframes apparition{
+        0%{
+            opacity: 0;
+    
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    header{
+        animation: apparition 5s;  
+    }
+    main{
+        animation: apparition 5s;
+    }
+    footer{
+        animation: apparition 5s;
+    
+    }
+    .restaurant__card__heart{
+        font-size: 30px;
+    }
+    .empty{
+        position:relative;
+      }
+    .full{
+        position:absolute;
+        right: 25px;
+        bottom: 22px;
+        opacity:0;
+      } 
+    .empty:hover{
+          opacity:0;
+        }
+      .full:hover{
+        opacity:1;
+        transform:scale(1.1);
+        transition-duration:(1000ms);
+        background-clip: text;
+        color:transparent;
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+    .restaurant__menu__heart{
+        font-size: 30px;
+        }
+    .like{
+        position:relative;
+      }
+    .love{
+        position:absolute;
+        right: 30px;
+        top: 53px;
+        opacity:0;
+        }
+    .like:hover{
+        opacity:0;
+          }
+    .love:hover{
+        opacity:1;
+        transform:scale(1.1);
+        transition-duration:(1000ms);
+        background-clip: text;
+        color:transparent;
+        background: -webkit-linear-gradient($primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }    
+    .restaurant__menu__starter {
+            animation-delay:10s;
+            transform-origin: top;
+            animation: progress-bar 1s;
+    }
+    .restaurant__menu__maincourse {
+            animation-delay: 10s;
+            transform-origin: top;
+            animation: progress-bar 1.5s 300ms;
+    }
+    .restaurant__menu__dessert {
+            animation-delay: 10s;
+            transform-origin: top;
+            animation: progress-bar 2s 600ms;   
+    }
+    @keyframes progress-bar{
+        0% {
+            transform: scaleY(0);
+            opacity: 0;
+        }
+        
+        100% {
+            transform: scaleY(1);
+            opacity: 1;
+        }
+    }
+    .restaurant__menu__checked{
+        height: 83px;
+        width: 0%;
+        border: 1px solid $green_light;
+        border-radius: 0 30px 30px 0;
+        background-color:$green_light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform:translateX(100px)
+    }
+    .fa-check-circle{
+        color:$white;
+        font-size: 20px;  
+        transform: scale(0);  
+    }
+    @keyframes menu__checked{
+        0%{ transform: scaleX(0);
+            opacity: 0;
+        }
+        
+        100%{
+            transform: scaleX(1);
+            opacity: 1;
+        }
+    }
+    .restaurant__menu__card{
+        border: 1px solid $grey;
+        width: 90%;
+        height: 83px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: $white;
+        border-radius: 30px 30px 30px 30px;
+        overflow: hidden;
+        &:hover{
+            width: 92%;
+            cursor: pointer;
+            text-overflow: ellipsis;
+            padding-right: 0px;
+            .restaurant__menu__checked{
+                width:20%;
+                transform: translateX(0px);
+                transform-origin: right;
+                transition: transform 1000ms ease-in-out;
+            }
+            .fa-check-circle{  
+                color:$white;
+                font-size: 20px;    
+                transform: rotate(2turn);
+                transition: transform 750ms ease-out 250ms; 
+            }
+            .restaurant__menu__ingredient{
+                width:70%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                
+            }
+            .restaurant__menu__name{
+                width:70%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .restaurant__menu__text{
+                width : 100%;
+                height: 80px;
+            }
+        
+        }
+    }
+    }
+
+@media (min-width:931px) and (max-width:1024px) {
+.home__explore:hover{
+    background-color:$pink_pink ;
+    box-shadow: 10px 5px 5px;
+    }
+.home__explore:hover{
+    background-color:$pink_pink ;
+    box-shadow: 10px 5px 5px;
+    }
+@keyframes rond{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+    }
+@keyframes spin{
+    0%{
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0;
+    }
+    }
+.loading{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    }
+.loading__spinner{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 6px solid transparent;
+    border-top-color:$primary-color;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+    position: relative;    
+    }
+.loading__spinner::after{
+    content: "";
+    position: absolute;
+    top:5px;
+    left:5px;
+    bottom:5px;
+    right:5px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color:$secondary-color;
+    animation-duration: 3s;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+    }
+.loading__spinner::before{
+    content: "";
+    position: absolute;
+    top:17px;
+    left:17px;
+    bottom:17px;
+    right:17px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color:$grey_grey;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+    }
+@keyframes apparition{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    }
+header{
+    animation: apparition 5s;  
+    }
+main{
+    animation: apparition 5s;
+    }
+footer{
+    animation: apparition 5s;
+}
+.restaurant__card__heart{
+    font-size: 30px;
+    }
+.empty{
+    position:relative;
+    }
+.full{
+    position:absolute;
+    right: 25px;
+    bottom: 22px;
+    opacity:0;
+    } 
+.empty:hover{
+    opacity:0;
+    }
+.full:hover{
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+.restaurant__menu__heart{
+    font-size: 30px;
+    }
+.like{
+    position:relative;
+    }
+.love{
+    position:absolute;
+    right: 30px;
+    top: 53px;
+    opacity:0;
+    }
+.like:hover{
+    opacity:0;
+    }
+.love:hover{
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+.restaurant__menu__starter {
+    animation-delay:10s;
+    transform-origin: top;
+    animation: progress-bar 1s;
+    }
+.restaurant__menu__maincourse {
+    animation-delay: 10s;
+    transform-origin: top;
+    animation: progress-bar 1.5s 300ms;   
+    }
+.restaurant__menu__dessert {
+    animation-delay: 10s;
+    transform-origin: top;
+    animation: progress-bar 2s 600ms;   
+    }
+@keyframes progress-bar{
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+        }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+        }
+        }
+.restaurant__menu__checked{
+    height: 83px;
+    width: 0%;
+    border: 1px solid $green_light;
+    border-radius: 0 30px 30px 0;
+    background-color:$green_light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateX(100px)
+    }
+.fa-check-circle{
+    color:$white;
+    font-size: 20px;  
+    transform: scale(0);  
+    }
+@keyframes menu__checked{
+    0%{ transform: scaleX(0);
+    opacity: 0;
+    }
+            
+    100%{
+    transform: scaleX(1);
+    opacity: 1;
+    }
+    }
+.restaurant__menu__card{
+    border: 1px solid $grey;
+    width: 57%;
+    height: 83px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $white;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+        &:hover{
+            width: 57.75%;
+            cursor: pointer;
+            text-overflow: ellipsis;
+            padding-right: 0px;
+            animation: menu__reduction 1000ms ease-in-out;
+            .restaurant__menu__checked {
+                width:20%;
+                transform: translateX(0px);
+                transform-origin: right;
+                transition: transform 1000ms ease-in-out;
+                }
+            .restaurant__menu__ingredient{
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                }       
+            .restaurant__menu__name{
+                width:70%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                }
+            .restaurant__menu__text{
+                width : 100%;
+                height: 80px;
+                }
+            .fa-check-circle{
+                color:$white;
+                font-size: 20px;    
+                transform: rotate(2turn);
+                transition: transform 750ms ease-out 250ms;
+                }
+            }
+        }
+        }
+
+@media (min-width:1025px) and (max-width:2000px) {
+.home__explore:hover{
+    background-color:$pink_pink ;
+    box-shadow: 10px 5px 5px;
+}
+.home__explore:hover{
+    background-color:$pink_pink ;
+    box-shadow: 10px 5px 5px;
+}
+@keyframes rond{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+}
+@keyframes spin{
+    0%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.loading{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+}
+.loading__spinner{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 6px solid transparent;
+    border-top-color:$primary-color;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+    position: relative;    
+}
+.loading__spinner::after{
+    content: "";
+    position: absolute;
+    top:5px;
+    left:5px;
+    bottom:5px;
+    right:5px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color:$secondary-color;
+    animation-duration: 3s;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+}
+.loading__spinner::before{
+    content: "";
+    position: absolute;
+    top:17px;
+    left:17px;
+    bottom:17px;
+    right:17px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color:$grey_grey;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+}
+@keyframes apparition{
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+header{
+    animation: apparition 5s;  
+}
+main{
+    animation: apparition 5s;
+}
+footer{
+    animation: apparition 5s;
+}
+.restaurant__card__heart{
+    font-size: 30px;
+}
+.empty{
+    position:relative;
+  }
+.full{
+    position:absolute;
+    right: 25px;
+    bottom: 22px;
+    opacity:0;
+  } 
+.empty:hover{
+      opacity:0;
+    }
+  .full:hover{
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+.restaurant__menu__heart{
+    font-size: 30px;
+    }
+.like{
+    position:relative;
+  }
+.love{
+    position:absolute;
+    right: 30px;
+    top: 53px;
+    opacity:0;
+    }
+.like:hover{
+    opacity:0;
+      }
+.love:hover{
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+.restaurant__menu__starter {
+        animation-delay:10s;
+        transform-origin: top;
+        animation: progress-bar 1s;
+}
+.restaurant__menu__maincourse {
+        animation-delay: 10s;
+        transform-origin: top;
+        animation: progress-bar 1.5s 300ms;   
+}
+.restaurant__menu__dessert {
+        animation-delay: 10s;
+        transform-origin: top;
+        animation: progress-bar 2s 600ms;   
+}
+@keyframes progress-bar{
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+.restaurant__menu__checked{
+    height: 83px;
+    width: 0%;
+    border: 1px solid $green_light;
+    border-radius: 0 30px 30px 0;
+    background-color:$green_light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateX(100px)
+}
+.fa-check-circle{
+    color:$white;
+    font-size: 20px;  
+    transform: scale(0);  
+}
+@keyframes menu__checked{
+    0%{ transform: scaleX(0);
+        opacity: 0;
+    }
+    
+    100%{
+        transform: scaleX(1);
+        opacity: 1;
+    }
+}
+.restaurant__menu__card{
+    border: 1px solid $grey;
+    width: 57%;
+    height: 83px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $white;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+    &:hover{
+        width: 57.75%;
+        cursor: pointer;
+        text-overflow: ellipsis;
+        padding-right: 0px;
+        animation: menu__reduction 1000ms ease-in-out;
+        .restaurant__menu__checked {
+            width:20%;
+            transform: translateX(0px);
+            transform-origin: right;
+            transition: transform 1000ms ease-in-out;
+        }
+        .restaurant__menu__ingredient{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }       
         .restaurant__menu__name{
             width:70%;
             white-space: nowrap;
@@ -258,10 +943,243 @@ footer{
             font-size: 20px;    
             transform: rotate(2turn);
             transition: transform 750ms ease-out 250ms;
-
         }
     }
 }
-
-
-
+}
+@media (min-width:2001px) and (max-width:2560px) {
+.home__explore:hover{
+    background-color:$pink_pink ;
+    box-shadow: 10px 5px 5px;
+    }
+.home__explore:hover{
+    background-color:$pink_pink ;
+    box-shadow: 10px 5px 5px;
+    }
+@keyframes rond{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+        opacity: 0;
+    }
+    }
+@keyframes spin{
+    0%{
+        opacity: 1;
+    
+    }
+    100%{
+        opacity: 0;
+    }
+    }
+.loading{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    }
+.loading__spinner{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 6px solid transparent;
+    border-top-color:$primary-color;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+    position: relative;    
+    }
+.loading__spinner::after{
+    content: "";
+    position: absolute;
+    top:5px;
+    left:5px;
+    bottom:5px;
+    right:5px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color:$secondary-color;
+    animation-duration: 3s;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+    }
+.loading__spinner::before{
+    content: "";
+    position: absolute;
+    top:17px;
+    left:17px;
+    bottom:17px;
+    right:17px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color:$grey_grey;
+    animation: rond 3s, spin 0s 3s ease-out forwards;
+    }
+@keyframes apparition{
+    0%{
+        opacity: 0;
+    
+    }
+    100%{
+        opacity: 1;
+    }
+    }
+header{
+    animation: apparition 5s;  
+    }
+main{
+    animation: apparition 5s;
+    }
+footer{
+    animation: apparition 5s;
+    }
+.restaurant__card__heart{
+    font-size: 30px;
+    }
+.empty{
+    position:relative;
+    }
+.full{
+    position:absolute;
+    right: 25px;
+    bottom: 22px;
+    opacity:0;
+    } 
+.empty:hover{
+    opacity:0;
+    }
+.full:hover{
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+.restaurant__menu__heart{
+    font-size: 30px;
+    }
+.like{
+    position:relative;
+    }
+.love{
+    position:absolute;
+    right: 30px;
+    top: 53px;
+    opacity:0;
+    }
+.like:hover{
+    opacity:0;
+    }
+.love:hover{
+    opacity:1;
+    transform:scale(1.1);
+    transition-duration:(1000ms);
+    background-clip: text;
+    color:transparent;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    } 
+.restaurant__menu__starter {
+    animation-delay:10s;
+    transform-origin: top;
+    animation: progress-bar 1s;
+    }
+.restaurant__menu__maincourse {
+    animation-delay: 10s;
+    transform-origin: top;
+    animation: progress-bar 1.5s 300ms;   
+    }
+.restaurant__menu__dessert {
+    animation-delay: 10s;
+    transform-origin: top;
+    animation: progress-bar 2s 600ms;   
+    }
+@keyframes progress-bar{
+    0% {
+    transform: scaleY(0);
+    opacity: 0;
+    }
+    
+    100% {
+    transform: scaleY(1);
+    opacity: 1;
+    }
+    }
+.restaurant__menu__checked{
+    height: 83px;
+    width: 0%;
+    border: 1px solid $green_light;
+    border-radius: 0 30px 30px 0;
+    background-color:$green_light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform:translateX(100px)
+    }
+.fa-check-circle{
+    color:$white;
+    font-size: 20px;  
+    transform: scale(0);  
+    }
+@keyframes menu__checked{
+    0%{ transform: scaleX(0);
+        opacity: 0;
+    }
+        
+    100%{
+    transform: scaleX(1);
+    opacity: 1;
+    }
+    }
+.restaurant__menu__card{
+    border: 1px solid $grey;
+    width: 57%;
+    height: 83px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: $white;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+    &:hover{
+        width: 57.75%;
+        cursor: pointer;
+        text-overflow: ellipsis;
+        padding-right: 0px;
+        animation: menu__reduction 1000ms ease-in-out;
+        .restaurant__menu__checked {
+        width:20%;
+        transform: translateX(0px);
+        transform-origin: right;
+        transition: transform 1000ms ease-in-out;
+        }
+        .restaurant__menu__ingredient{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        }       
+        .restaurant__menu__name{
+        width:70%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        }
+        .restaurant__menu__text{
+        width : 100%;
+        height: 80px;
+        }
+        .fa-check-circle{
+        color:$white;
+        font-size: 20px;    
+        transform: rotate(2turn);
+        transition: transform 750ms ease-out 250ms;
+        }
+        }
+    }
+    }
