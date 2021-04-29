@@ -1,12 +1,10 @@
 @media (max-width:480px){
 .home__explore:hover{
-    background-color:$pink_pink ;
+    background-color:$primary-color ;
+    opacity: 0.7;
     box-shadow: 10px 5px 5px;
 }
-.home__explore:hover{
-    background-color:$pink_pink ;
-    box-shadow: 10px 5px 5px;
-}
+
 @keyframes rond{
     0%{
         transform: rotate(0deg);
@@ -254,13 +252,11 @@ footer{
 
 @media (min-width:481px) and (max-width:929px){
     .home__explore:hover{
-        background-color:$pink_pink ;
+        background-color:$primary-color ;
+        opacity: 0.7;
         box-shadow: 10px 5px 5px;
     }
-    .home__explore:hover{
-        background-color:$pink_pink ;
-        box-shadow: 10px 5px 5px;
-    }
+    
     @keyframes rond{
         0%{
             transform: rotate(0deg);
@@ -493,13 +489,11 @@ footer{
 
 @media (min-width:931px) and (max-width:1024px) {
 .home__explore:hover{
-    background-color:$pink_pink ;
+    background-color:$primary-color ;
+    opacity:0.7;
     box-shadow: 10px 5px 5px;
     }
-.home__explore:hover{
-    background-color:$pink_pink ;
-    box-shadow: 10px 5px 5px;
-    }
+
 @keyframes rond{
     0%{
         transform: rotate(0deg);
@@ -728,12 +722,10 @@ footer{
 
 @media (min-width:1025px) and (max-width:2000px) {
 .home__explore:hover{
-    background-color:$pink_pink ;
+    background-color:$primary-color ;
+    opacity: 0.7;
     box-shadow: 10px 5px 5px;
 }
-.home__explore:hover{
-    background-color:$pink_pink ;
-    box-shadow: 10px 5px 5px;
 }
 @keyframes rond{
     0%{
@@ -961,14 +953,11 @@ footer{
         }
     }
 }
-}
+
 @media (min-width:2001px) and (max-width:2560px) {
 .home__explore:hover{
-    background-color:$pink_pink ;
-    box-shadow: 10px 5px 5px;
-    }
-.home__explore:hover{
-    background-color:$pink_pink ;
+    background-color:$primary-color ;
+    opacity: 0.7;
     box-shadow: 10px 5px 5px;
     }
 @keyframes rond{

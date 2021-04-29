@@ -2,29 +2,18 @@
 body{
     width: 100%;
 }
-.home{
-    padding-top: 25px;
+a:visited{
+    text-decoration: none;
+    color: $black;
 }
 .home__location{
-    background-color: $grey;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: 400;
+    @include home__location;
 }
 #home__location__symbol{
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .home__introduction{
-    padding-top: 50px;
-    background-color:$grey_light ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
+    @include home__introduction;
 }
 .home__introduction__quote{
     font-size: 1.4rem;
@@ -38,11 +27,7 @@ body{
     text-align: center;
 }
 .home__explore{
-    border: 1px solid $primary-color;
-    border-radius: 45px 45px 45px 45px;
-    background: linear-gradient($primary-color, $secondary-color);
-    padding: 6px 15px 6px 15px;
-    box-shadow:6px 6px 6px $grey_grey;
+    @include home__explore;
 }
 .home__explore__text{
     color: $white;
@@ -57,26 +42,10 @@ li {
 	counter-increment: step; 
 }
 .operation li:before {
-    position: absolute;	
-    margin-top: 14px;
-    margin-left: -24px;	
-	content: counter(step); 
-	padding: 7px 11px 7px 11px;
-	background:$primary-color;
-	-moz-border-radius: 60px;
-	border-radius: 60px;
-	font-weight: bold;
-	font-size: 0.8em;
-	color: white;
+    @include operation__before;
 }
 .operation__step{
-    border:1px solid $grey_light;
-    background-color: $grey_light;
-    margin: 20px 20px;
-    padding: 10px;
-    border-radius: 30px 30px 30px 30px;
-    font-weight: 600;
-    box-shadow:6px 6px 6px $grey_grey;
+    @include operation__step;
 }
 #operation__step__one__icon{
     padding: 20px 20px;
@@ -86,837 +55,494 @@ li {
     padding: 20px 20px;
 }
 .operation__step__pink{
-    border:1px solid $pink_light;
-    background-color: $pink_light;
-    margin: 20px 20px;
-    padding: 10px;
-    border-radius: 30px 30px 30px 30px;
-    font-weight: 600;
-    box-shadow:6px 6px 6px $grey_grey;
+    @include operation__step__pink
 }
 #operation__step__three__icon{
     padding: 20px 20px;
     color: $primary-color;
 }
 .restaurant__container{
-    background-color: $grey;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.restaurant__menu{
-    position: relative;
-    top: -92px
+    @include restaurant__container;
 }
 .restaurant{
     @include titre__section;
-    
 }
-
 .restaurant__card{
-    border: 1px;
-    border-radius: 15px 15px 15px 15px;
-    font-size: 13px;
-    width: 85%;
-    height: 300px;  
-    margin-left: 10px;
-    margin-right: 10px; 
-    margin-bottom: 30px; 
-    margin-top: 30px;
-    position: relative;
-    background-color: $white;
-    cursor: pointer;
+    @include restaurant__card
 }
 .restaurant__card__image{
-    width: 100%;
-    height: 70%;
-    border-radius: 15px 15px 0 0;
-    margin: 0px;
-    object-fit: cover;
-    
+    @include restaurant__card__image;    
 }
 .restaurant__card__new{
-    position:absolute;
-    top: 10px;
-    right: 10px;
-    border: 1px solid;
-    background-color: #99e2d0;
-    padding: 0px 10px;
-    color: #008766;
+    @include restaurant__card__new;
 }
 .restaurant__card__text h3, p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .restaurant__card__name{
-    padding-left: 15px;
-    padding-right: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include restaurant__card__name;
 }
 .align{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-footer{
-    background-color: black;
-    color: white;
-    
-}
 }
 
+/*Changement de breakpoints*/
 
 @media (min-width: 481px) and (max-width:929px){
-    body{
-        width: 100%;
+body{
+    width: 100%;
     }
-    .home{
-        padding-top: 25px;
+a:visited{
+    text-decoration: none;
+    color: $black;
     }
-    .home__location{
-        background-color: $grey;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        font-weight: 400;
+.home{
+    padding-top: 25px;
     }
-    #home__location__symbol{
-        margin-right: 10px;
+.home__location{
+    @include home__location;
     }
-    .home__introduction{
-        padding-top: 50px;
-        background-color:$grey_light ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 50px;
+#home__location__symbol{
+    margin-right: 10px;
     }
-    .home__introduction__quote{
-        font-size: 1.4rem;
-        font-weight: 800;
-        width: 250px;
-        text-align: center;
+.home__introduction{
+    @include home__introduction;
     }
-    .home__introduction__presentation{
-        font-size: 1.2rem;
-        width: 350px;
-        text-align: center;
+.home__introduction__quote{
+    font-size: 1.4rem;
+    font-weight: 800;
+    width: 250px;
+    text-align: center;
     }
-    .home__explore{
-        border: 1px solid $primary-color;
-        border-radius: 45px 45px 45px 45px;
-        background: linear-gradient($primary-color, $secondary-color);
-        padding: 6px 15px 6px 15px;
-        box-shadow:6px 6px 6px $grey_grey;
+.home__introduction__presentation{
+    font-size: 1.2rem;
+    width: 350px;
+    text-align: center;
     }
-    .home__explore__text{
-        color: $white;
+.home__explore{
+    @include home__explore;
     }
-    .operation__introduction{
-        padding-left: 35px;
-        font-weight: 800;
+.home__explore__text{
+    color: $white;
     }
-    .operation ol {counter-reset: step;} 
-    li {
-        list-style-type: none;
-        counter-increment: step; 
+.operation__introduction{
+    padding-left: 35px;
+    font-weight: 800;
     }
-    .operation li:before {
-        position: absolute;	
-        margin-top: 14px;
-        margin-left: -24px;	
-        content: counter(step); 
-        padding: 7px 11px 7px 11px;
-        background:$primary-color;
-        -moz-border-radius: 60px;
-        border-radius: 60px;
-        font-weight: bold;
-        font-size: 0.8em;
-        color: white;
+.operation ol {counter-reset: step;} 
+li {
+    list-style-type: none;
+    counter-increment: step; 
     }
-    .operation__step{
-        border:1px solid $grey_light;
-        background-color: $grey_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+.operation li:before {
+    @include operation__before;
     }
-    #operation__step__one__icon{
-        padding: 20px 20px;
+.operation__step{
+    @include operation__step;
     }
-    
-    #operation__step__two__icon{
-        padding: 20px 20px;
+#operation__step__one__icon{
+    padding: 20px 20px;
     }
-    .operation__step__pink{
-        border:1px solid $pink_light;
-        background-color: $pink_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+#operation__step__two__icon{
+    padding: 20px 20px;
     }
-    #operation__step__three__icon{
-        padding: 20px 20px;
-        color: $primary-color;
+.operation__step__pink{
+    @include operation__step__pink;
     }
-    .restaurant__container{
-        background-color: $grey;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+#operation__step__three__icon{
+    padding: 20px 20px;
+    color: $primary-color;
     }
-    .restaurant__menu{
-        position: relative;
-        top: -92px
+.restaurant__container{
+    @include restaurant__container;
     }
-    .restaurant{
-        @include titre__section;
-        
+.restaurant__menu{
+    position: relative;
+    top: -92px
     }
-    
-    .restaurant__card{
-        border: 1px;
-        border-radius: 15px 15px 15px 15px;
-        font-size: 13px;
-        width: 85%;
-        height: 300px;  
-        margin-left: 10px;
-        margin-right: 10px; 
-        margin-bottom: 30px; 
-        margin-top: 30px;
-        position: relative;
-        background-color: $white;
-        cursor: pointer;
+.restaurant{
+    @include titre__section;   
     }
-    .restaurant__card__image{
-        width: 100%;
-        height: 70%;
-        border-radius: 15px 15px 0 0;
-        margin: 0px;
-        object-fit: cover;
-        
+.restaurant__card{
+    @include restaurant__card;
     }
-    .restaurant__card__new{
-        position:absolute;
-        top: 10px;
-        right: 10px;
-        border: 1px solid;
-        background-color: #99e2d0;
-        padding: 0px 10px;
-        color: #008766;
+.restaurant__card__image{
+    @include restaurant__card__image;    
     }
-    .restaurant__card__text h3, p{
-        margin-top: 10px;
-        margin-bottom: 10px;
+.restaurant__card__new{
+    @include restaurant__card__new;
     }
-    .restaurant__card__name{
-        padding-left: 15px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+.restaurant__card__text h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
-    .align{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.restaurant__card__name{
+    @include restaurant__card__name;
     }
-    footer{
-        background-color: black;
-        color: white;
-        
+.align{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
     }
 @media (min-width: 930px) and (max-width: 1024px) {
   
         /* mesures pour desktop */
     
-    body{
-        width:100%;
+body{
+    width:100%;
     }
-    header{
-        width: 100%;
+header{
+    width: 100%;
     }
-    main{
-        width: 100%;
+main{
+    width: 100%;
     }
-    
-    .home{
-        width: 100%;
-        padding-top: 25px;
+a:visited{
+    text-decoration: none;
+    color: $black;
+}
+.home{
+    width: 100%;
+    padding-top: 25px;
     }
-    .home__location{
-        background-color: $grey;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        font-weight: 400;
+.home__location{
+    @include home__location;
     }
-    #home__location__symbol{
-        margin-right: 10px;
+#home__location__symbol{
+    margin-right: 10px;
     }
-    .home__introduction{
-        padding-top: 50px;
-        background-color:$grey_light ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 50px;
+.home__introduction{
+    @include home__introduction;
     }
-    .home__introduction__quote{
-        font-size: 1.4rem;
-        font-weight: 800;
-        width: 100%;
-        text-align: center;
+.home__introduction__quote{
+    font-size: 1.4rem;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
     }
-    .home__introduction__presentation{
-        font-size: 1.2rem;
-        width: 350px;
-        text-align: center;
+.home__introduction__presentation{
+    font-size: 1.2rem;
+    width: 350px;
+    text-align: center;
     }
-    .home__explore{
-        border: 1px solid $primary-color;
-        border-radius: 45px 45px 45px 45px;
-        background: linear-gradient($primary-color, $secondary-color);
-        padding: 6px 15px 6px 15px;
-        box-shadow:6px 6px 6px $grey_grey;
+.home__explore{
+    @include home__explore;
     }
-    .home__explore__text{
-        color: $white;
+.home__explore__text{
+    color: $white;
     }
-    .operation__introduction{
-        text-align: center;
-        font-weight: 800;
+.operation__introduction{
+    text-align: center;
+    font-weight: 800;
     }
-    .operation ol {counter-reset: step;} 
-    li {
-        list-style-type: none;
-        counter-increment: step; 
+.operation ol {counter-reset: step;} 
+li {
+    list-style-type: none;
+    counter-increment: step; 
     }
-    ol{
-        display: flex;
-        justify-content: space-around;
+ol{
+    display: flex;
+    justify-content: space-around;
     }
-    .operation li:before {
-        position: absolute;	
-        margin-top: 14px;
-        margin-left: -24px;	
-        content: counter(step); 
-        padding: 7px 11px 7px 11px;
-        background:$primary-color;
-        -moz-border-radius: 60px;
-        border-radius: 60px;
-        font-weight: bold;
-        font-size: 0.8em;
-        color: white;
+.operation li:before {
+    @include operation__before;
     }
-    .operation__step{
-        border:1px solid $grey_light;
-        background-color: $grey_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+.operation__step{
+    @include operation__step;
     }
-    #operation__step__one__icon{
-        padding: 20px 20px;
+#operation__step__one__icon{
+    padding: 20px 20px;
     }
-    
-    #operation__step__two__icon{
-        padding: 20px 20px;
+#operation__step__two__icon{
+    padding: 20px 20px;
     }
-    .operation__step__pink{
-        border:1px solid $pink_light;
-        background-color: $pink_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+.operation__step__pink{
+    @include operation__step__pink;
     }
-    #operation__step__three__icon{
-        padding: 20px 20px;
-        color: $primary-color;
+#operation__step__three__icon{
+    padding: 20px 20px;
+    color: $primary-color;
     }
-    .restaurant__container{
-        background-color: $grey;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+.restaurant__container{
+    @include restaurant__container;
     }
-    .restaurant__menu{
-        position: relative;
-        top: -92px
+.restaurant__menu{
+    position: relative;
+    top: -92px
     }
-    .restaurant{
-        @include titre__section;
-        text-align: center;
+.restaurant{
+    @include titre__section;
+    text-align: center;
     }
-    
-    .restaurant__card{
-        border: 1px;
-        border-radius: 15px 15px 15px 15px;
-        font-size: 13px;
-        width: 85%;
-        height: 300px;  
-        margin-left: 10px;
-        margin-right: 10px; 
-        margin-bottom: 30px; 
-        margin-top: 30px;
-        position: relative;
-        background-color: $white;
-        cursor: pointer;
+.restaurant__card{
+    @include restaurant__card;
     }
-    .restaurant__card__image{
-        width: 100%;
-        height: 70%;
-        border-radius: 15px 15px 0 0;
-        margin: 0px;
-        object-fit: cover;
-        
+.restaurant__card__image{
+    @include restaurant__card__image; 
     }
-    .restaurant__card__new{
-        position:absolute;
-        top: 10px;
-        right: 10px;
-        border: 1px solid;
-        background-color: #99e2d0;
-        padding: 0px 10px;
-        color: #008766;
+.restaurant__card__new{
+    @include restaurant__card__new;
     }
-    .restaurant__card__text h3, p{
-        margin-top: 10px;
-        margin-bottom: 10px;
+.restaurant__card__text h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
-    .restaurant__card__name{
-        padding-left: 15px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+.restaurant__card__name{
+    @include restaurant__card__name;
     }
-    .restaurant__list{
-        display: flex;
-        flex-direction: row;
+.restaurant__list{
+    display: flex;
+    flex-direction: row;
     }
-    a.align{
-        width: 25%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    footer{
-        background-color: black;
-        color: white;
-        
+a.align{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     }
     }
     
 @media (min-width: 1025px) and (max-width:2000px){
   
-        /* mesures pour desktop */
-    
-    body{
-        width:100%;
+        /* mesures pour Grand desktop */
+
+body{
+    width:100%;
     }
-    header{
-        width: 100%;
+header{
+    width: 100%;
     }
-    main{
-        width: 100%;
+main{
+    width: 100%;
     }
-    
-    .home{
-        width: 100%;
-        padding-top: 25px;
+a:visited{
+    text-decoration: none;
+    color:$black;
+}    
+.home{
+    width: 100%;
+    padding-top: 25px;
     }
-    .home__location{
-        background-color: $grey;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        font-weight: 400;
+.home__location{
+    @include home__location;
     }
-    #home__location__symbol{
-        margin-right: 10px;
+#home__location__symbol{
+    margin-right: 10px;
     }
-    .home__introduction{
-        padding-top: 50px;
-        background-color:$grey_light ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 50px;
+.home__introduction{
+    @include home__introduction;
     }
-    .home__introduction__quote{
-        font-size: 1.4rem;
-        font-weight: 800;
-        width: 100%;
-        text-align: center;
+.home__introduction__quote{
+    font-size: 1.4rem;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
     }
-    .home__introduction__presentation{
-        font-size: 1.2rem;
-        width: 350px;
-        text-align: center;
+.home__introduction__presentation{
+    font-size: 1.2rem;
+    width: 350px;
+    text-align: center;
     }
-    .home__explore{
-        border: 1px solid $primary-color;
-        border-radius: 45px 45px 45px 45px;
-        background: linear-gradient($primary-color, $secondary-color);
-        padding: 6px 15px 6px 15px;
-        box-shadow:6px 6px 6px $grey_grey;
+.home__explore{
+    @include home__explore;
+   }
+.home__explore__text{
+    color: $white;
     }
-    .home__explore__text{
-        color: $white;
+.operation__introduction{
+    text-align: center;
+    font-weight: 800;
     }
-    .operation__introduction{
-        text-align: center;
-        font-weight: 800;
+.operation ol {counter-reset: step;} 
+li {
+    list-style-type: none;
+    counter-increment: step; 
     }
-    .operation ol {counter-reset: step;} 
-    li {
-        list-style-type: none;
-        counter-increment: step; 
+ol{
+    display: flex;
+    justify-content: space-around;
     }
-    ol{
-        display: flex;
-        justify-content: space-around;
+.operation li:before {
+    @include operation__before;
     }
-    .operation li:before {
-        position: absolute;	
-        margin-top: 14px;
-        margin-left: -24px;	
-        content: counter(step); 
-        padding: 7px 11px 7px 11px;
-        background:$primary-color;
-        -moz-border-radius: 60px;
-        border-radius: 60px;
-        font-weight: bold;
-        font-size: 0.8em;
-        color: white;
+.operation__step{
+    @include operation__step;
     }
-    .operation__step{
-        border:1px solid $grey_light;
-        background-color: $grey_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+#operation__step__one__icon{
+    padding: 20px 20px;
+    }    
+#operation__step__two__icon{
+    padding: 20px 20px;
     }
-    #operation__step__one__icon{
-        padding: 20px 20px;
+.operation__step__pink{
+    @include operation__step__pink;
     }
-    
-    #operation__step__two__icon{
-        padding: 20px 20px;
+#operation__step__three__icon{
+    padding: 20px 20px;
+    color: $primary-color;
     }
-    .operation__step__pink{
-        border:1px solid $pink_light;
-        background-color: $pink_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+.restaurant__container{
+    @include restaurant__container;
     }
-    #operation__step__three__icon{
-        padding: 20px 20px;
-        color: $primary-color;
+.restaurant__menu{
+    position: relative;
+    top: -92px
     }
-    .restaurant__container{
-        background-color: $grey;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+.restaurant{
+    @include titre__section;
+    text-align: center;
     }
-    .restaurant__menu{
-        position: relative;
-        top: -92px
+.restaurant__card{
+    @include restaurant__card;
     }
-    .restaurant{
-        @include titre__section;
-        text-align: center;
+.restaurant__card__image{
+    @include restaurant__card__image;
     }
-    
-    .restaurant__card{
-        border: 1px;
-        border-radius: 15px 15px 15px 15px;
-        font-size: 13px;
-        width: 85%;
-        height: 300px;  
-        margin-left: 10px;
-        margin-right: 10px; 
-        margin-bottom: 30px; 
-        margin-top: 30px;
-        position: relative;
-        background-color: $white;
-        cursor: pointer;
+.restaurant__card__new{
+    @include restaurant__card__new;
     }
-    .restaurant__card__image{
-        width: 100%;
-        height: 70%;
-        border-radius: 15px 15px 0 0;
-        margin: 0px;
-        object-fit: cover;
-        
+.restaurant__card__text h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
-    .restaurant__card__new{
-        position:absolute;
-        top: 10px;
-        right: 10px;
-        border: 1px solid;
-        background-color: #99e2d0;
-        padding: 0px 10px;
-        color: #008766;
+.restaurant__card__name{
+    @include restaurant__card__name;
     }
-    .restaurant__card__text h3, p{
-        margin-top: 10px;
-        margin-bottom: 10px;
+.restaurant__list{
+    display: flex;
+    flex-direction: row;
     }
-    .restaurant__card__name{
-        padding-left: 15px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+a.align{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     }
-    .restaurant__list{
-        display: flex;
-        flex-direction: row;
-    }
-    a.align{
-        width: 25%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    footer{
-        background-color: black;
-        color: white;
-        
-    }
-    
-    
     }
 @media (min-width: 2001px) and (max-width:2560px){
   
         /* mesures pour desktop */
     
-    body{
-        width:100%;
+body{
+    width:100%;
     }
-    header{
-        width: 100%;
+header{
+    width: 100%;
     }
-    main{
-        width: 100%;
+main{
+    width: 100%;
     }
-    
-    .home{
-        width: 100%;
-        padding-top: 25px;
+a:visited{
+    text-decoration: none;
+    color:$black;
+}
+.home{
+    width: 100%;
+    padding-top: 25px;
     }
-    .home__location{
-        background-color: $grey;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2rem;
-        font-weight: 400;
+.home__location{
+    @include home__location;
     }
-    #home__location__symbol{
-        margin-right: 10px;
+#home__location__symbol{
+    margin-right: 10px;
     }
-    .home__introduction{
-        padding-top: 50px;
-        background-color:$grey_light ;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 50px;
+.home__introduction{
+    @include home__location;
     }
-    .home__introduction__quote{
-        font-size: 1.4rem;
-        font-weight: 800;
-        width: 100%;
-        text-align: center;
+.home__introduction__quote{
+    font-size: 1.4rem;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
     }
-    .home__introduction__presentation{
-        font-size: 1.2rem;
-        width: 350px;
-        text-align: center;
+.home__introduction__presentation{
+    font-size: 1.2rem;
+    width: 350px;
+    text-align: center;
     }
-    .home__explore{
-        border: 1px solid $primary-color;
-        border-radius: 45px 45px 45px 45px;
-        background: linear-gradient($primary-color, $secondary-color);
-        padding: 6px 15px 6px 15px;
-        box-shadow:6px 6px 6px $grey_grey;
+.home__explore{
+    @include home__explore;
     }
-    .home__explore__text{
-        color: $white;
+.home__explore__text{
+    color: $white;
     }
-    .operation__introduction{
-        text-align: center;
-        font-weight: 800;
+.operation__introduction{
+    text-align: center;
+    font-weight: 800;
     }
-    .operation ol {counter-reset: step;} 
-    li {
-        list-style-type: none;
-        counter-increment: step; 
+.operation ol {counter-reset: step;} 
+li {
+    list-style-type: none;
+    counter-increment: step; 
     }
-    ol{
-        display: flex;
-        justify-content: space-around;
+ol{
+    display: flex;
+    justify-content: space-around;
     }
-    .operation li:before {
-        position: absolute;	
-        margin-top: 14px;
-        margin-left: -24px;	
-        content: counter(step); 
-        padding: 7px 11px 7px 11px;
-        background:$primary-color;
-        -moz-border-radius: 60px;
-        border-radius: 60px;
-        font-weight: bold;
-        font-size: 0.8em;
-        color: white;
+.operation li:before {
+    @include operation__before;
     }
-    .operation__step{
-        border:1px solid $grey_light;
-        background-color: $grey_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+.operation__step{
+    @include operation__step;
     }
-    #operation__step__one__icon{
-        padding: 20px 20px;
+#operation__step__one__icon{
+    padding: 20px 20px;
     }
-    
-    #operation__step__two__icon{
-        padding: 20px 20px;
+#operation__step__two__icon{
+    padding: 20px 20px;
     }
-    .operation__step__pink{
-        border:1px solid $pink_light;
-        background-color: $pink_light;
-        margin: 20px 20px;
-        padding: 10px;
-        border-radius: 30px 30px 30px 30px;
-        font-weight: 600;
-        box-shadow:6px 6px 6px $grey_grey;
+.operation__step__pink{
+    @include operation__step__pink;
     }
-    #operation__step__three__icon{
-        padding: 20px 20px;
-        color: $primary-color;
+#operation__step__three__icon{
+    padding: 20px 20px;
+    color: $primary-color;
     }
-    .restaurant__container{
-        background-color: $grey;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+.restaurant__container{
+    @include restaurant__container;
     }
-    .restaurant__menu{
-        position: relative;
-        top: -92px
+.restaurant__menu{
+    position: relative;
+    top: -92px
     }
-    .restaurant{
-        @include titre__section;
-        text-align: center;
+.restaurant{
+    @include titre__section;
+    text-align: center;
     }
-    
-    .restaurant__card{
-        border: 1px;
-        border-radius: 15px 15px 15px 15px;
-        font-size: 13px;
-        width: 85%;
-        height: 300px;  
-        margin-left: 10px;
-        margin-right: 10px; 
-        margin-bottom: 30px; 
-        margin-top: 30px;
-        position: relative;
-        background-color: $white;
-        cursor: pointer;
+.restaurant__card{
+    @include restaurant__card;
     }
-    .restaurant__card__image{
-        width: 100%;
-        height: 70%;
-        border-radius: 15px 15px 0 0;
-        margin: 0px;
-        object-fit: cover;
-        
+.restaurant__card__image{
+    @include restaurant__card__image;
     }
-    .restaurant__card__new{
-        position:absolute;
-        top: 10px;
-        right: 10px;
-        border: 1px solid;
-        background-color: #99e2d0;
-        padding: 0px 10px;
-        color: #008766;
+.restaurant__card__new{
+    @include restaurant__card__new;
     }
-    .restaurant__card__text h3, p{
-        margin-top: 10px;
-        margin-bottom: 10px;
+.restaurant__card__text h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
     }
-    .restaurant__card__name{
-        padding-left: 15px;
-        padding-right: 25px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+.restaurant__card__name{
+    @include restaurant__card__name;
     }
-    .restaurant__list{
-        display: flex;
-        flex-direction: row;
+.restaurant__list{
+    display: flex;
+    flex-direction: row;
     }
-    a.align{
-        width: 25%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+a.align{
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     }
-    footer{
-        background-color: black;
-        color: white;
-        
-    }
-    
-    
     }
     
     
