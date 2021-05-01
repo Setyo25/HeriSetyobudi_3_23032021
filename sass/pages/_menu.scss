@@ -7,32 +7,16 @@ body{
 
 /* code pour les menus*/
 .restaurant__mainpage{
-    border: 1px;
-    font-size: 13px;
-    width: 100%;  
-    position: relative;
-    background-color: $white;
+    @include restaurant__mainpage;
 }
 .restaurant__mainpage__image{
-    width: 100%;
-    height: 340px;
-    margin: 0px;
-    object-fit: cover;
+    @include restaurant__mainpage__image;
 }
 .restaurant__menu{
-    background-color: $grey_light;
-    border-radius: 50px 50px 0 0;
-    padding-top: 30px;
-    position: relative;
-    top: -92px
+    @include restaurant__menu;
 }
 .restaurant__name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    @include restaurant__name;
 }
 .restaurant__name h2{
     font-family: 'Shrikhand', cursive;
@@ -64,57 +48,29 @@ body{
 
 
 .restaurant__menu__text{
-    width:100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    @include restaurant__menu__text;
 }
 .restaurant__menu__name{
-    width:84%;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__name;
 }
 .restaurant__menu__ingredient{
-    width:84%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__ingredient;
 }
 .restaurant__menu__price{
-    font-weight: 700;
-    padding-right: 10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 30px;
+    @include restaurant__menu__price;
 }
 .restaurant__menu__ingredientandprice{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    @include restaurant__menu__ingredientandprice
 }
 .restaurant__menu__nameingredientandprice{
     width:100%;
+    transition: width 2000ms;
 }
 .order{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    @include order;
 }
 .order__button{
-    border: 1px solid $primary-color;
-    border-radius: 45px 45px 45px 45px;
-    background:linear-gradient($primary-color, $secondary-color);
-    padding: 10px 50px 10px 50px;
+    @include order__button;
 }
 .order__button p{
     color: $white;
@@ -133,32 +89,16 @@ body{
         
     /* code pour les menus*/
 .restaurant__mainpage{
-    border: 1px;
-    font-size: 13px;
-    width: 100%;  
-    position: relative;
-    background-color: $white;
+    @include restaurant__mainpage;
     }
 .restaurant__mainpage__image{
-    width: 100%;
-    height: 340px;
-    margin: 0px;
-    object-fit: cover;
+    @include restaurant__mainpage__image;
     }
 .restaurant__menu{
-    background-color: $grey_light;
-    border-radius: 50px 50px 0 0;
-    padding-top: 30px;
-    position: relative;
-    top: -92px
+    @include restaurant__menu;
     }
 .restaurant__name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    @include restaurant__name;
     }
 .restaurant__name h2{
     font-family: 'Shrikhand', cursive;
@@ -188,57 +128,29 @@ body{
     padding-left: 40px;
     }       
 .restaurant__menu__text{
-    width:100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    @include restaurant__menu__text;
     }
 .restaurant__menu__name{
-    width:80%;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__name;
     }
 .restaurant__menu__ingredient{
-    width:84%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__ingredient;
     }
 .restaurant__menu__price{
-    font-weight: 700;
-    padding-right: 10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 30px;
+    @include restaurant__menu__price;
     }
 .restaurant__menu__ingredientandprice{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    @include restaurant__menu__ingredientandprice;
     }
 .restaurant__menu__nameingredientandprice{
     width:100%;
+    transition: width 2000ms;
     }
 .order{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    @include order;
     }
 .order__button{
-    border: 1px solid $primary-color;
-    border-radius: 45px 45px 45px 45px;
-    background:linear-gradient($primary-color, $secondary-color);
-    padding: 10px 50px 10px 50px;
+    @include order__button;
     }
 .order__button p{
     color: $white;
@@ -246,6 +158,7 @@ body{
     font-weight: 500;
     }
     }
+
 @media (min-width:930px) and (max-width:1024px){
 body{
     margin: 0px;
@@ -255,32 +168,16 @@ body{
         
     /* code pour les menus*/
 .restaurant__mainpage{
-    border: 1px;
-    font-size: 13px;
-    width: 100%;  
-    position: relative;
-    background-color: $white;
+    @include restaurant__mainpage;
     }
 .restaurant__mainpage__image{
-    width: 100%;
-    height: 340px;
-    margin: 0px;
-    object-fit: cover;
+    @include restaurant__mainpage__image;
     }
 .restaurant__menu{
-    background-color: $grey_light;
-    border-radius: 50px 50px 0 0;
-    padding-top: 30px;
-    position: relative;
-    top: -92px
+    @include restaurant__menu;
     }
 .restaurant__name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    @include restaurant__name;
     }
 .restaurant__name h2{
     font-family: 'Shrikhand', cursive;
@@ -310,57 +207,29 @@ body{
     text-align: center;
     }
 .restaurant__menu__text{
-    width:100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    @include restaurant__menu__text;
     }
 .restaurant__menu__name{
-    width:80%;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__name;
     }
 .restaurant__menu__ingredient{
-    width:84%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__ingredient;
     }
 .restaurant__menu__price{
-    font-weight: 700;
-    padding-right: 10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 30px;
+    @include restaurant__menu__price;
     }
 .restaurant__menu__ingredientandprice{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    @include restaurant__menu__ingredientandprice;
     }
 .restaurant__menu__nameingredientandprice{
     width:100%;
+    transition: width 2000ms;
     }
 .order{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    @include order;
     }
 .order__button{
-    border: 1px solid $primary-color;
-    border-radius: 45px 45px 45px 45px;
-    background:linear-gradient($primary-color, $secondary-color);
-    padding: 10px 50px 10px 50px;
+    @include order__button;
     }
 .order__button p{
     color: $white;
@@ -379,32 +248,16 @@ body{
 
 /* code pour les menus*/
 .restaurant__mainpage{
-    border: 1px;
-    font-size: 13px;
-    width: 100%;  
-    position: relative;
-    background-color: $white;
+    @include restaurant__mainpage;
 }
 .restaurant__mainpage__image{
-    width: 100%;
-    height: 340px;
-    margin: 0px;
-    object-fit: cover;
+    @include restaurant__mainpage__image;
 }
 .restaurant__menu{
-    background-color: $grey_light;
-    border-radius: 50px 50px 0 0;
-    padding-top: 30px;
-    position: relative;
-    top: -92px
+    @include restaurant__menu;
 }
 .restaurant__name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    @include restaurant__name;
 }
 .restaurant__name h2{
     font-family: 'Shrikhand', cursive;
@@ -433,60 +286,30 @@ body{
 .restaurant__menu__dessert h3{
     text-align: center;
 }
-
-
 .restaurant__menu__text{
-    width:100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    @include restaurant__menu__text;
 }
 .restaurant__menu__name{
-    width:80%;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__name;
 }
 .restaurant__menu__ingredient{
-    width:84%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__ingredient;
 }
 .restaurant__menu__price{
-    font-weight: 700;
-    padding-right: 10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 30px;
+    @include restaurant__menu__price;
 }
 .restaurant__menu__ingredientandprice{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    @include restaurant__menu__ingredientandprice;
 }
 .restaurant__menu__nameingredientandprice{
     width:100%;
+    transition: width 2000ms;
 }
 .order{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    @include order;
 }
 .order__button{
-    border: 1px solid $primary-color;
-    border-radius: 45px 45px 45px 45px;
-    background:linear-gradient($primary-color, $secondary-color);
-    padding: 10px 50px 10px 50px;
+    @include order__button;
 }
 .order__button p{
     color: $white;
@@ -504,32 +327,16 @@ body{
     
     /* code pour les menus*/
 .restaurant__mainpage{
-    border: 1px;
-    font-size: 13px;
-    width: 100%;  
-    position: relative;
-    background-color: $white;
+    @include restaurant__mainpage;
     }
 .restaurant__mainpage__image{
-    width: 100%;
-    height: 340px;
-    margin: 0px;
-    object-fit: cover;
+    @include restaurant__mainpage__image;
     }
 .restaurant__menu{
-    background-color: $grey_light;
-    border-radius: 50px 50px 0 0;
-    padding-top: 30px;
-    position: relative;
-    top: -92px
+    @include restaurant__menu;
     }
 .restaurant__name{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    @include restaurant__name;
     }
 .restaurant__name h2{
     font-family: 'Shrikhand', cursive;
@@ -559,57 +366,29 @@ body{
     text-align: center;
     }
 .restaurant__menu__text{
-    width:100%;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
+    @include restaurant__menu__text;
     }
 .restaurant__menu__name{
-    width:80%;
-    font-weight: 700;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__name;
     }
 .restaurant__menu__ingredient{
-    width:84%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include restaurant__menu__ingredient;
     }
 .restaurant__menu__price{
-    font-weight: 700;
-    padding-right: 10px;
-    display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 30px;
+    @include restaurant__menu__price;
     }
 .restaurant__menu__ingredientandprice{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    @include restaurant__menu__ingredientandprice
     }
 .restaurant__menu__nameingredientandprice{
     width:100%;
+    transition: width 2000ms;
     }
 .order{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    @include order;
     }
 .order__button{
-    border: 1px solid $primary-color;
-    border-radius: 45px 45px 45px 45px;
-    background:linear-gradient($primary-color, $secondary-color);
-    padding: 10px 50px 10px 50px;
+    @include order__button;
     }
 .order__button p{
     color: $white;

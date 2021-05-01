@@ -170,32 +170,18 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform:translateX(100px)
+    transform:translateX(100px);
+    transition: width 1000ms ease-in-out;
+    color:$white;
+    font-size: 20px;
 }
 .fa-check-circle{
     color:$white;
     font-size: 20px;  
-    transform: scale(0);  
+    transform: rotate(720deg);   
 }
-@keyframes menu__checked{
-    0%{ transform: scaleX(0);
-        opacity: 0;
-    }
-    
-    100%{
-        transform: scaleX(1);
-        opacity: 1;
-    }
-}
-@keyframes reduction{
-    0%{
-        width: 84%;
 
-    }
-    100%{
-        width: 70%;
-    }
-}
+
 .restaurant__menu__card{
     border: 1px solid $grey;
     width: 90%;
@@ -216,6 +202,9 @@ footer{
             transform-origin: right;
             transition: transform 1000ms ease-in-out;
         }
+        .restaurant__menu__nameingredientandprice{
+            width:80%;
+        }
         .fa-check-circle{  
             color:$white;
             font-size: 20px;    
@@ -223,29 +212,22 @@ footer{
             transition: transform 750ms ease-out 250ms; 
         }
         .restaurant__menu__ingredient{
-            width:70%;
+            width:80%;
             white-space: nowrap;
             text-overflow: ellipsis;
-            overflow: hidden;
-            animation: reduction 1000ms ease-in-out;
-            
+            overflow: hidden;        
         }
         .restaurant__menu__name{
-            width:70%;
+            width:80%;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-            animation: reduction 1000ms ease-in-out;
+            
         }
         .restaurant__menu__text{
             width : 100%;
             height: 80px;
         }
-        .restaurant__menu__price{
-            transform: translateX(70px);
-            margin-left:0px;
-        }
-    
     }
 }
 }
@@ -422,23 +404,18 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        transform:translateX(100px)
+        transform:translateX(100px);
+        transition: width 1000ms ease-in-out;
+        color:$white;
+        font-size: 20px;
+
     }
     .fa-check-circle{
         color:$white;
-        font-size: 20px;  
-        transform: scale(0);  
+        font-size: 20px;   
+        transform: rotate(0deg);
     }
-    @keyframes menu__checked{
-        0%{ transform: scaleX(0);
-            opacity: 0;
-        }
-        
-        100%{
-            transform: scaleX(1);
-            opacity: 1;
-        }
-    }
+   
     .restaurant__menu__card{
         border: 1px solid $grey;
         width: 90%;
@@ -459,12 +436,14 @@ footer{
                 transform-origin: right;
                 transition: transform 1000ms ease-in-out;
             }
-            .fa-check-circle{  
-                color:$white;
-                font-size: 20px;    
-                transform: rotate(2turn);
-                transition: transform 750ms ease-out 250ms; 
+            .fa-check-circle{
+                transform: rotate(720deg);
+                transition : transform 500ms ease-in-out;
             }
+            .restaurant__menu__nameingredientandprice{
+                width:80%;
+            }
+            
             .restaurant__menu__ingredient{
                 width:70%;
                 white-space: nowrap;
@@ -657,26 +636,20 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform:translateX(100px)
+    transform:translateX(100px);
+    transition: width 1000ms ease-in-out;
+    color:$white;
+    font-size: 20px;
     }
 .fa-check-circle{
     color:$white;
     font-size: 20px;  
-    transform: scale(0);  
+    transform: rotate(720deg);  
     }
-@keyframes menu__checked{
-    0%{ transform: scaleX(0);
-    opacity: 0;
-    }
-            
-    100%{
-    transform: scaleX(1);
-    opacity: 1;
-    }
-    }
+
 .restaurant__menu__card{
     border: 1px solid $grey;
-    width: 57%;
+    width: 90%;
     height: 83px;
     padding-left: 10px;
     padding-right: 10px;
@@ -684,16 +657,19 @@ footer{
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
         &:hover{
-            width: 57.75%;
+            width: 92%;
             cursor: pointer;
             text-overflow: ellipsis;
             padding-right: 0px;
-            animation: menu__reduction 1000ms ease-in-out;
+            
             .restaurant__menu__checked {
                 width:20%;
                 transform: translateX(0px);
                 transform-origin: right;
                 transition: transform 1000ms ease-in-out;
+                }
+            .restaurant__menu__nameingredientandprice{
+                width:80%;
                 }
             .restaurant__menu__ingredient{
                 white-space: nowrap;
@@ -892,26 +868,20 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform:translateX(100px)
+    transform:translateX(100px);
+    transition: width 1000ms ease-in-out;
+    color:$white;
+    font-size: 20px;
 }
 .fa-check-circle{
     color:$white;
     font-size: 20px;  
-    transform: scale(0);  
+    transform: rotate(720deg);   
 }
-@keyframes menu__checked{
-    0%{ transform: scaleX(0);
-        opacity: 0;
-    }
-    
-    100%{
-        transform: scaleX(1);
-        opacity: 1;
-    }
-}
+
 .restaurant__menu__card{
     border: 1px solid $grey;
-    width: 57%;
+    width: 90%;
     height: 83px;
     padding-left: 10px;
     padding-right: 10px;
@@ -919,16 +889,19 @@ footer{
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
     &:hover{
-        width: 57.75%;
+        width: 92%;
         cursor: pointer;
         text-overflow: ellipsis;
         padding-right: 0px;
-        animation: menu__reduction 1000ms ease-in-out;
+        
         .restaurant__menu__checked {
             width:20%;
             transform: translateX(0px);
             transform-origin: right;
             transition: transform 1000ms ease-in-out;
+        }
+        .restaurant__menu__nameingredientandprice{
+            width:80%;
         }
         .restaurant__menu__ingredient{
             white-space: nowrap;
@@ -1125,26 +1098,20 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform:translateX(100px)
+    transform:translateX(100px);
+    transition: width 1000ms ease-in-out;
+    color:$white;
+    font-size: 20px;
     }
 .fa-check-circle{
     color:$white;
     font-size: 20px;  
-    transform: scale(0);  
+    transform: rotate(720deg);  
     }
-@keyframes menu__checked{
-    0%{ transform: scaleX(0);
-        opacity: 0;
-    }
-        
-    100%{
-    transform: scaleX(1);
-    opacity: 1;
-    }
-    }
+
 .restaurant__menu__card{
     border: 1px solid $grey;
-    width: 57%;
+    width: 90%;
     height: 83px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1152,16 +1119,19 @@ footer{
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
     &:hover{
-        width: 57.75%;
+        width: 92%;
         cursor: pointer;
         text-overflow: ellipsis;
         padding-right: 0px;
-        animation: menu__reduction 1000ms ease-in-out;
+        
         .restaurant__menu__checked {
         width:20%;
         transform: translateX(0px);
         transform-origin: right;
         transition: transform 1000ms ease-in-out;
+        }
+        .restaurant__menu__nameingredientandprice{
+            width:80%;
         }
         .restaurant__menu__ingredient{
         white-space: nowrap;
