@@ -178,9 +178,17 @@ footer{
 .fa-check-circle{
     color:$white;
     font-size: 20px;  
-    transform: rotate(720deg);   
+    transition: transform 1000ms;   
 }
+@keyframes circlecheck{
+    0%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(720deg)
 
+    }
+}
 
 .restaurant__menu__card{
     border: 1px solid $grey;
@@ -192,44 +200,41 @@ footer{
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
     &:hover{
+        .restaurant__menu__checked{
         width: 92%;
         cursor: pointer;
         text-overflow: ellipsis;
         padding-right: 0px;
-        .restaurant__menu__checked{
-            width:20%;
-            transform: translateX(0px);
-            transform-origin: right;
-            transition: transform 1000ms ease-in-out;
+        width:20%;
+        transform: translateX(0px);
+        transform-origin: right;
+        transition: width 1000ms ease-in-out;
+        }
+        .fa-check-circle{
+        animation: circlecheck 0.5s;
         }
         .restaurant__menu__nameingredientandprice{
-            width:80%;
-        }
-        .fa-check-circle{  
-            color:$white;
-            font-size: 20px;    
-            transform: rotate(2turn);
-            transition: transform 750ms ease-out 250ms; 
+        width:80%;
         }
         .restaurant__menu__ingredient{
-            width:80%;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;        
+        width:80%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;        
         }
         .restaurant__menu__name{
-            width:80%;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            
+        width:80%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;    
         }
         .restaurant__menu__text{
-            width : 100%;
-            height: 80px;
+        width : 100%;
+        height: 80px;
         }
     }
 }
+
 }
 
 @media (min-width:481px) and (max-width:929px){
@@ -413,7 +418,7 @@ footer{
     .fa-check-circle{
         color:$white;
         font-size: 20px;   
-        transform: rotate(0deg);
+        transform: rotate(720deg); 
     }
    
     .restaurant__menu__card{
@@ -437,8 +442,7 @@ footer{
                 transition: transform 1000ms ease-in-out;
             }
             .fa-check-circle{
-                transform: rotate(720deg);
-                transition : transform 500ms ease-in-out;
+                transition: transform 500ms ease-in-out;
             }
             .restaurant__menu__nameingredientandprice{
                 width:80%;
@@ -686,10 +690,7 @@ footer{
                 width : 100%;
                 height: 80px;
                 }
-            .fa-check-circle{
-                color:$white;
-                font-size: 20px;    
-                transform: rotate(2turn);
+            .fa-check-circle{   
                 transition: transform 750ms ease-out 250ms;
                 }
             }
@@ -919,9 +920,6 @@ footer{
             height: 80px;
         }
         .fa-check-circle{
-            color:$white;
-            font-size: 20px;    
-            transform: rotate(2turn);
             transition: transform 750ms ease-out 250ms;
         }
     }
@@ -1149,9 +1147,6 @@ footer{
         height: 80px;
         }
         .fa-check-circle{
-        color:$white;
-        font-size: 20px;    
-        transform: rotate(2turn);
         transition: transform 750ms ease-out 250ms;
         }
         }

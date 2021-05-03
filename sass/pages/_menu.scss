@@ -223,7 +223,7 @@ body{
     }
 .restaurant__menu__nameingredientandprice{
     width:100%;
-    transition: width 2000ms;
+    transition: width 1000ms ease-in-out;
     }
 .order{
     @include order;
