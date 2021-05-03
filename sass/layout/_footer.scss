@@ -10,7 +10,10 @@ footer ul li{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
+a:link{
+    text-decoration: none;
+    color:$white;
+}
 .logo__footer{
     font-family: 'Shrikhand', cursive;
     color: white;
@@ -31,6 +34,10 @@ footer ul{
     flex-direction: row;
     justify-content: space-around;
 }
+a:link{
+    text-decoration: none;
+    color:$white;
+}
 }
 
 @media (min-width: 930px) and (max-width: 1024px) {
@@ -46,7 +53,10 @@ footer ul{
     flex-direction: row;
     justify-content: space-around;
     }
-    
+a:link{
+    text-decoration: none;
+    color:$white;
+    }   
     }
 @media (min-width: 481px) and (max-width: 929px) {
 
@@ -62,7 +72,10 @@ footer ul li{
     margin-top: 10px;
     margin-bottom: 10px;
     }
-    
+a:link{
+    text-decoration: none;
+    color:$white;
+    }
 .logo__footer{
     font-family: 'Shrikhand', cursive;
     color: white;

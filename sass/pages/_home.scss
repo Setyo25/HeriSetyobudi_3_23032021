@@ -3,6 +3,10 @@ body{
     width: 100%;
 }
 a:visited{
+    text-decoration:none;
+    color: $black;
+}
+a:link{
     text-decoration: none;
     color: $black;
 }
@@ -97,6 +101,10 @@ body{
     width: 100%;
     }
 a:visited{
+    text-decoration:none;
+    color: $black;
+    }
+a:link{
     text-decoration: none;
     color: $black;
     }
@@ -195,6 +203,14 @@ li {
     
 body{
     width:100%;
+    }
+a:visited{
+    text-decoration:none;
+    color: $black;
+    }
+a:link{
+    text-decoration: none;
+    color: $black;
     }
 header{
     width: 100%;
@@ -315,6 +331,14 @@ a.align{
 body{
     width:100%;
     }
+a:visited{
+    text-decoration:none;
+    color: $black;
+    }
+a:link{
+    text-decoration: none;
+    color: $black;
+    }
 header{
     width: 100%;
     }
@@ -432,6 +456,14 @@ a.align{
     
 body{
     width:100%;
+    }
+a:visited{
+    text-decoration:none;
+    color: $black;
+    }
+a:link{
+    text-decoration: none;
+    color: $black;
     }
 header{
     width: 100%;
