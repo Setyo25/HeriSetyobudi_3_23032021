@@ -212,10 +212,10 @@ footer{
     transform: translateX(0px);
     transform-origin: right;
     transition: width 1000ms ease-in-out;
-    }
-.fa-check-circle:hover{
+    &>.fa-check-circle{
     animation: circlecheck 0.5s;
     }
+}
 .restaurant__menu__nameingredientandprice:hover{
     width:80%;
     }

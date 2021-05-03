@@ -311,7 +311,7 @@
     -webkit-transition: width 1000ms ease-in-out;
     transition: width 1000ms ease-in-out;
   }
-  .fa-check-circle:hover {
+  .restaurant__menu__checked:hover > .fa-check-circle {
     -webkit-animation: circlecheck 0.5s;
             animation: circlecheck 0.5s;
   }
