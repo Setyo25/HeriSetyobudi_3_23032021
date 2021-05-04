@@ -260,179 +260,216 @@ a:link{
     font-weight: 500;
     }
     }
-                
-        
 @media (min-width:1025px) and (max-width:2000px){
 body{
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
+margin: 0px;
+font-family: 'Roboto', sans-serif;
+width: 100%;
 }
 a:visited{
-    text-decoration:none;
-    color: $black;
+text-decoration:none;
+color: $black;
 }
 a:link{
-    text-decoration: none;
-    color: $black;
+text-decoration: none;
+color: $black;
 }
 /* code pour les menus*/
 .restaurant__mainpage{
-    @include restaurant__mainpage;
+@include restaurant__mainpage;
 }
 .restaurant__mainpage__image{
-    @include restaurant__mainpage__image;
+@include restaurant__mainpage__image;
 }
 .restaurant__menu{
-    @include restaurant__menu;
+@include restaurant__menu;
 }
 .restaurant__name{
-    @include restaurant__name;
+@include restaurant__name;
 }
 .restaurant__name h2{
-    font-family: 'Shrikhand', cursive;
+font-family: 'Shrikhand', cursive;
 }
 .restaurant__menu__card{
-    margin-left: 0px;
-    margin-right: 0px;
+margin-left: 0px;
+margin-right: 0px;
 }
 .restaurant__menu__cardlist{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+width:65%;
+}
+.restaurant__menu__starter{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.restaurant__menu__maincourse{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.restaurant__menu__dessert{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .restaurant__menu__cardlist__quatre{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
 }
 .restaurant__menu__starter h3{
-    text-align: center;
+text-align: center;
 }
 .restaurant__menu__maincourse h3{
-    text-align: center;
+text-align: center;
 }
 .restaurant__menu__dessert h3{
-    text-align: center;
+text-align: center;
 }
 .restaurant__menu__text{
-    @include restaurant__menu__text;
+@include restaurant__menu__text;
 }
 .restaurant__menu__name{
-    @include restaurant__menu__name;
+@include restaurant__menu__name;
 }
 .restaurant__menu__ingredient{
-    @include restaurant__menu__ingredient;
+@include restaurant__menu__ingredient;
 }
 .restaurant__menu__price{
-    @include restaurant__menu__price;
+@include restaurant__menu__price;
 }
 .restaurant__menu__ingredientandprice{
-    @include restaurant__menu__ingredientandprice;
+@include restaurant__menu__ingredientandprice;
 }
 .restaurant__menu__nameingredientandprice{
-    width:100%;
-    transition: width 2000ms;
+width:100%;
+transition: width 2000ms;
 }
 .order{
-    @include order;
+@include order;
 }
 .order__button{
-    @include order__button;
+@include order__button;
 }
 .order__button p{
-    color: $white;
-    font-size: 18px;
-    font-weight: 500;
+color: $white;
+font-size: 18px;
+font-weight: 500;
 }
 }
-
 @media (min-width:2001px)and (max-width:2560px){
 body{
-    margin: 0px;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    }
+margin: 0px;
+font-family: 'Roboto', sans-serif;
+width: 100%;
+}
 a:visited{
-    text-decoration:none;
-    color: $black;
-    }
+text-decoration:none;
+color: $black;
+}
 a:link{
-    text-decoration: none;
-    color: $black;
-    }   
-    /* code pour les menus*/
+text-decoration: none;
+color: $black;
+}   
+/* code pour les menus*/
 .restaurant__mainpage{
-    @include restaurant__mainpage;
-    }
+@include restaurant__mainpage;
+}
 .restaurant__mainpage__image{
-    @include restaurant__mainpage__image;
-    }
+@include restaurant__mainpage__image;
+}
 .restaurant__menu{
-    @include restaurant__menu;
-    }
+@include restaurant__menu;
+}
 .restaurant__name{
-    @include restaurant__name;
-    }
+@include restaurant__name;
+}
 .restaurant__name h2{
-    font-family: 'Shrikhand', cursive;
-    }
+font-family: 'Shrikhand', cursive;
+}
 .restaurant__menu__card{
-    margin-left: 0px;
-    margin-right: 0px;
-    }
+margin-left: 0px;
+margin-right: 0px;
+}
 .restaurant__menu__cardlist{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
+display: flex;
+flex-direction: column;
+align-items: center;
+width:65%;
+}
+.restaurant__menu__starter{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.restaurant__menu__maincourse{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.restaurant__menu__dessert{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.restaurant__menu__cardlist{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 .restaurant__menu__cardlist__quatre{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    }
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
 .restaurant__menu__starter h3{
-    text-align: center;
-    }
+text-align: center;
+}
 .restaurant__menu__maincourse h3{
-    text-align: center;
-    }
+text-align: center;
+}
 .restaurant__menu__dessert h3{
-    text-align: center;
-    }
+text-align: center;
+}
 .restaurant__menu__text{
-    @include restaurant__menu__text;
-    }
+@include restaurant__menu__text;
+}
 .restaurant__menu__name{
-    @include restaurant__menu__name;
-    }
+@include restaurant__menu__name;
+}
 .restaurant__menu__ingredient{
-    @include restaurant__menu__ingredient;
-    }
+@include restaurant__menu__ingredient;
+}
 .restaurant__menu__price{
-    @include restaurant__menu__price;
-    }
+@include restaurant__menu__price;
+}
 .restaurant__menu__ingredientandprice{
-    @include restaurant__menu__ingredientandprice
-    }
+@include restaurant__menu__ingredientandprice
+}
 .restaurant__menu__nameingredientandprice{
-    width:100%;
-    transition: width 2000ms;
-    }
+width:100%;
+transition: width 2000ms;
+}
 .order{
-    @include order;
-    }
+@include order;
+}
 .order__button{
-    @include order__button;
-    }
+@include order__button;
+}
 .order__button p{
-    color: $white;
-    font-size: 18px;
-    font-weight: 500;
-    }
-    }
-            
-    
-        
+color: $white;
+font-size: 18px;
+font-weight: 500;
+}
+}
