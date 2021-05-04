@@ -42,6 +42,15 @@
 	font-size: 0.8em;
 	color:$white;
 }
+@mixin operation__step__grey{
+    border:1px solid $grey_light;
+    background-color: $grey_light;
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 30px 30px 30px 30px;
+    font-weight: 600;
+    box-shadow:6px 6px 6px $grey_grey;
+}
 @mixin operation__step{
     border:1px solid $grey_light;
     background-color: $grey_light;
@@ -201,6 +210,7 @@
     border-radius: 45px 45px 45px 45px;
     background:linear-gradient($primary-color, $secondary-color);
     padding: 10px 50px 10px 50px;
+    box-shadow:6px 6px 6px lighten($grey_grey, 20%);
 }
 
 /* Fin de mixin pour menu */

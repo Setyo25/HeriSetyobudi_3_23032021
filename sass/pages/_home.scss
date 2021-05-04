@@ -48,8 +48,8 @@ li {
 .operation li:before {
     @include operation__before;
 }
-.operation__step{
-    @include operation__step;
+.operation__step__grey{
+    @include operation__step__grey;
 }
 #operation__step__one__icon{
     padding: 20px 20px;
@@ -149,8 +149,8 @@ li {
 .operation li:before {
     @include operation__before;
     }
-.operation__step{
-    @include operation__step;
+.operation__step__grey{
+    @include operation__step__grey;
     }
 #operation__step__one__icon{
     padding: 20px 20px;
@@ -268,8 +268,8 @@ ol{
 .operation li:before {
     @include operation__before;
     }
-.operation__step{
-    @include operation__step;
+.operation__step__grey{
+    @include operation__step__grey;
     }
 #operation__step__one__icon{
     padding: 20px 20px;
@@ -395,8 +395,8 @@ ol{
 .operation li:before {
     @include operation__before;
     }
-.operation__step{
-    @include operation__step;
+.operation__step__grey{
+    @include operation__step__grey;
     }
 #operation__step__one__icon{
     padding: 20px 20px;
@@ -521,8 +521,8 @@ ol{
 .operation li:before {
     @include operation__before;
     }
-.operation__step{
-    @include operation__step;
+.operation__step__grey{
+    @include operation__step__grey;
     }
 #operation__step__one__icon{
     padding: 20px 20px;
