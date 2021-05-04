@@ -156,10 +156,23 @@
     margin-top: 5px;    
     margin-bottom: 5px;
 }
+@mixin restaurant__menu__name__desktop{
+    width:84%;
+    font-weight: 700;
+    margin-top: 5px;    
+    margin-bottom: 5px;
+    font-size: 20px;
+}
 @mixin restaurant__menu__ingredient{
     width:84%;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+@mixin restaurant__menu__ingredient__desktop{
+    width:84%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
 }
 @mixin restaurant__menu__price{
     font-weight: 700;

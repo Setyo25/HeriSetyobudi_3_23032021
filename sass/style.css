@@ -3769,12 +3769,15 @@ header h1 {
   }
   .restaurant__menu__starter h3 {
     text-align: center;
+    border-bottom: 6px solid #99E2D0;
   }
   .restaurant__menu__maincourse h3 {
     text-align: center;
+    border-bottom: 6px solid #99E2D0;
   }
   .restaurant__menu__dessert h3 {
     text-align: center;
+    border-bottom: 6px solid #99E2D0;
   }
   .restaurant__menu__text {
     width: 100%;
@@ -3801,11 +3804,13 @@ header h1 {
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 20px;
   }
   .restaurant__menu__ingredient {
     width: 84%;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 18px;
   }
   .restaurant__menu__price {
     font-weight: 700;
@@ -4022,12 +4027,15 @@ header h1 {
   }
   .restaurant__menu__starter h3 {
     text-align: center;
+    border-bottom: 6px solid #99E2D0;
   }
   .restaurant__menu__maincourse h3 {
     text-align: center;
+    border-bottom: 6px solid #99E2D0;
   }
   .restaurant__menu__dessert h3 {
     text-align: center;
+    border-bottom: 6px solid #99E2D0;
   }
   .restaurant__menu__text {
     width: 100%;
@@ -4054,11 +4062,13 @@ header h1 {
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 20px;
   }
   .restaurant__menu__ingredient {
     width: 84%;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 18px;
   }
   .restaurant__menu__price {
     font-weight: 700;

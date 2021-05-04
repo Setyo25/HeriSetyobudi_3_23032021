@@ -326,21 +326,24 @@ justify-content: space-between;
 }
 .restaurant__menu__starter h3{
 text-align: center;
+border-bottom: 6px solid $tertiary-color;
 }
 .restaurant__menu__maincourse h3{
 text-align: center;
+border-bottom: 6px solid $tertiary-color;
 }
 .restaurant__menu__dessert h3{
 text-align: center;
+border-bottom: 6px solid $tertiary-color;
 }
 .restaurant__menu__text{
 @include restaurant__menu__text;
 }
 .restaurant__menu__name{
-@include restaurant__menu__name;
+@include restaurant__menu__name__desktop;
 }
 .restaurant__menu__ingredient{
-@include restaurant__menu__ingredient;
+@include restaurant__menu__ingredient__desktop;
 }
 .restaurant__menu__price{
 @include restaurant__menu__price;
@@ -435,21 +438,24 @@ justify-content: space-between;
 }
 .restaurant__menu__starter h3{
 text-align: center;
+border-bottom: 6px solid $tertiary-color;
 }
 .restaurant__menu__maincourse h3{
 text-align: center;
+border-bottom: 6px solid $tertiary-color;
 }
 .restaurant__menu__dessert h3{
 text-align: center;
+border-bottom: 6px solid $tertiary-color;
 }
 .restaurant__menu__text{
 @include restaurant__menu__text;
 }
 .restaurant__menu__name{
-@include restaurant__menu__name;
+@include restaurant__menu__name__desktop;
 }
 .restaurant__menu__ingredient{
-@include restaurant__menu__ingredient;
+@include restaurant__menu__ingredient__desktop;
 }
 .restaurant__menu__price{
 @include restaurant__menu__price;
