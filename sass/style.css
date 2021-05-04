@@ -296,6 +296,42 @@
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
   }
+  .restaurant__menu__card:hover .restaurant__menu__checked {
+    width: 92%;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    padding-right: 0px;
+    width: 20%;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: width 1000ms ease-in-out;
+    transition: width 1000ms ease-in-out;
+  }
+  .restaurant__menu__card:hover .fa-check-circle {
+    -webkit-animation: circlecheck 0.5s;
+            animation: circlecheck 0.5s;
+  }
+  .restaurant__menu__card:hover .restaurant__menu__nameingredientandprice {
+    width: 80%;
+  }
+  .restaurant__menu__card:hover .restaurant__menu__ingredient {
+    width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .restaurant__menu__card:hover .restaurant__menu__name {
+    width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .restaurant__menu__card:hover .restaurant__menu__text {
+    width: 100%;
+    height: 80px;
+  }
   .restaurant__menu__card:hover {
     width: 92%;
     cursor: pointer;
@@ -311,7 +347,7 @@
     -webkit-transition: width 1000ms ease-in-out;
     transition: width 1000ms ease-in-out;
   }
-  .restaurant__menu__checked:hover > .fa-check-circle {
+  .fa-check-circle:hover {
     -webkit-animation: circlecheck 0.5s;
             animation: circlecheck 0.5s;
   }
