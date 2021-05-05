@@ -143,17 +143,17 @@ footer{
 .restaurant__menu__starter {
         animation-delay:10s;
         transform-origin: top;
-        animation: progress-bar 1s;
+        animation: progress-bar 2s;
 }
 .restaurant__menu__maincourse {
         animation-delay: 10s;
         transform-origin: top;
-        animation: progress-bar 1.5s 300ms;
+        animation: progress-bar 3s;
 }
 .restaurant__menu__dessert {
         animation-delay: 10s;
         transform-origin: top;
-        animation: progress-bar 2s 600ms;   
+        animation: progress-bar 4s;   
 }
 @keyframes progress-bar{
     0% {
@@ -421,17 +421,17 @@ footer{
 .restaurant__menu__starter {
     animation-delay:10s;
     transform-origin: top;
-    animation: progress-bar 1s;
+    animation: progress-bar 2s;
     }
 .restaurant__menu__maincourse {
     animation-delay: 10s;
     transform-origin: top;
-    animation: progress-bar 1.5s 300ms;
+    animation: progress-bar 3s;
     }
 .restaurant__menu__dessert {
     animation-delay: 10s;
     transform-origin: top;
-    animation: progress-bar 2s 600ms;   
+    animation: progress-bar 4s;   
     }
 @keyframes progress-bar{
     0% {
@@ -695,17 +695,17 @@ footer{
 .restaurant__menu__starter {
     animation-delay:10s;
     transform-origin: top;
-    animation: progress-bar 1s;
+    animation: progress-bar 2s;
     }
 .restaurant__menu__maincourse {
     animation-delay: 10s;
     transform-origin: top;
-    animation: progress-bar 1.5s 300ms;   
+    animation: progress-bar 3s;   
     }
 .restaurant__menu__dessert {
     animation-delay: 10s;
     transform-origin: top;
-    animation: progress-bar 2s 600ms;   
+    animation: progress-bar 4s;   
     }
 @keyframes progress-bar{
     0% {
@@ -967,17 +967,17 @@ background: -webkit-linear-gradient($primary-color, $secondary-color);
 .restaurant__menu__starter {
                 animation-delay:10s;
                 transform-origin: top;
-                animation: progress-bar 1s;
+                animation: progress-bar 2s;
         }
 .restaurant__menu__maincourse {
                 animation-delay: 10s;
                 transform-origin: top;
-                animation: progress-bar 1.5s 300ms;
+                animation: progress-bar 3s;
         }
 .restaurant__menu__dessert {
                 animation-delay: 10s;
                 transform-origin: top;
-                animation: progress-bar 2s 600ms;   
+                animation: progress-bar 4s;   
         }
 @keyframes progress-bar{
             0% {
@@ -1244,17 +1244,17 @@ footer{
 .restaurant__menu__starter {
                 animation-delay:10s;
                 transform-origin: top;
-                animation: progress-bar 1s;
+                animation: progress-bar 2s;
         }
 .restaurant__menu__maincourse {
                 animation-delay: 10s;
                 transform-origin: top;
-                animation: progress-bar 1.5s 300ms;
+                animation: progress-bar 3s;
         }
 .restaurant__menu__dessert {
                 animation-delay: 10s;
                 transform-origin: top;
-                animation: progress-bar 2s 600ms;   
+                animation: progress-bar 4s;   
         }
 @keyframes progress-bar{
             0% {

@@ -203,24 +203,24 @@
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1s;
-            animation: progress-bar 1s;
+    -webkit-animation: progress-bar 2s;
+            animation: progress-bar 2s;
   }
   .restaurant__menu__maincourse {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1.5s 300ms;
-            animation: progress-bar 1.5s 300ms;
+    -webkit-animation: progress-bar 3s;
+            animation: progress-bar 3s;
   }
   .restaurant__menu__dessert {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 2s 600ms;
-            animation: progress-bar 2s 600ms;
+    -webkit-animation: progress-bar 4s;
+            animation: progress-bar 4s;
   }
   @-webkit-keyframes progress-bar {
     0% {
@@ -581,24 +581,24 @@
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1s;
-            animation: progress-bar 1s;
+    -webkit-animation: progress-bar 2s;
+            animation: progress-bar 2s;
   }
   .restaurant__menu__maincourse {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1.5s 300ms;
-            animation: progress-bar 1.5s 300ms;
+    -webkit-animation: progress-bar 3s;
+            animation: progress-bar 3s;
   }
   .restaurant__menu__dessert {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 2s 600ms;
-            animation: progress-bar 2s 600ms;
+    -webkit-animation: progress-bar 4s;
+            animation: progress-bar 4s;
   }
   @-webkit-keyframes progress-bar {
     0% {
@@ -959,24 +959,24 @@
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1s;
-            animation: progress-bar 1s;
+    -webkit-animation: progress-bar 2s;
+            animation: progress-bar 2s;
   }
   .restaurant__menu__maincourse {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1.5s 300ms;
-            animation: progress-bar 1.5s 300ms;
+    -webkit-animation: progress-bar 3s;
+            animation: progress-bar 3s;
   }
   .restaurant__menu__dessert {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 2s 600ms;
-            animation: progress-bar 2s 600ms;
+    -webkit-animation: progress-bar 4s;
+            animation: progress-bar 4s;
   }
   @-webkit-keyframes progress-bar {
     0% {
@@ -1335,24 +1335,24 @@
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1s;
-            animation: progress-bar 1s;
+    -webkit-animation: progress-bar 2s;
+            animation: progress-bar 2s;
   }
   .restaurant__menu__maincourse {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1.5s 300ms;
-            animation: progress-bar 1.5s 300ms;
+    -webkit-animation: progress-bar 3s;
+            animation: progress-bar 3s;
   }
   .restaurant__menu__dessert {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 2s 600ms;
-            animation: progress-bar 2s 600ms;
+    -webkit-animation: progress-bar 4s;
+            animation: progress-bar 4s;
   }
   @-webkit-keyframes progress-bar {
     0% {
@@ -1713,24 +1713,24 @@
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1s;
-            animation: progress-bar 1s;
+    -webkit-animation: progress-bar 2s;
+            animation: progress-bar 2s;
   }
   .restaurant__menu__maincourse {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 1.5s 300ms;
-            animation: progress-bar 1.5s 300ms;
+    -webkit-animation: progress-bar 3s;
+            animation: progress-bar 3s;
   }
   .restaurant__menu__dessert {
     -webkit-animation-delay: 10s;
             animation-delay: 10s;
     -webkit-transform-origin: top;
             transform-origin: top;
-    -webkit-animation: progress-bar 2s 600ms;
-            animation: progress-bar 2s 600ms;
+    -webkit-animation: progress-bar 4s;
+            animation: progress-bar 4s;
   }
   @-webkit-keyframes progress-bar {
     0% {
