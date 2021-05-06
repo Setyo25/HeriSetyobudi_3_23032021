@@ -27,7 +27,7 @@
     border-radius: 45px 45px 45px 45px;
     background: linear-gradient($primary-color, $secondary-color);
     padding: 6px 15px 6px 15px;
-    box-shadow:6px 6px 6px $grey_grey;
+    box-shadow: 6px 6px 6px $grey_grey;
 }
 @mixin operation__before{
     position: absolute;	
@@ -67,7 +67,7 @@
     padding: 10px;
     border-radius: 30px 30px 30px 30px;
     font-weight: 600;
-    box-shadow:6px 6px 6px $grey_grey;
+    box-shadow: 6px 6px 6px $grey_grey;
 }
 @mixin restaurant__container{
     background-color: $grey;
@@ -149,7 +149,7 @@
     padding-right: 30px;
 }
 @mixin restaurant__menu__text{
-    width:100%;
+    width: 100%;
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -160,25 +160,25 @@
     padding-left: 0px;
 }
 @mixin restaurant__menu__name{
-    width:84%;
+    width: 84%;
     font-weight: 700;
     margin-top: 5px;    
     margin-bottom: 5px;
 }
 @mixin restaurant__menu__name__desktop{
-    width:84%;
+    width: 84%;
     font-weight: 700;
     margin-top: 5px;    
     margin-bottom: 5px;
     font-size: 20px;
 }
 @mixin restaurant__menu__ingredient{
-    width:84%;
+    width: 84%;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 @mixin restaurant__menu__ingredient__desktop{
-    width:84%;
+    width: 84%;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 18px;
@@ -210,7 +210,7 @@
     border-radius: 45px 45px 45px 45px;
     background:linear-gradient($primary-color, $secondary-color);
     padding: 10px 50px 10px 50px;
-    box-shadow:6px 6px 6px lighten($grey_grey, 20%);
+    box-shadow: 6px 6px 6px lighten($grey_grey, 20%);
 }
 
 /* Fin de mixin pour menu */

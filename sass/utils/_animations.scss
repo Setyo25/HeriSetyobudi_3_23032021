@@ -12,6 +12,7 @@
     100%{
         transform: rotate(720deg);
         opacity: 0;
+        z-index: -1;
     }
 }
 @keyframes spin{
@@ -20,6 +21,7 @@
     }
     100%{
         opacity: 0;
+        z-index: -1;
     }
 }
 .loading{
@@ -204,7 +206,7 @@ footer{
     overflow: hidden;
     &:hover{
         .restaurant__menu__checked{
-        width: 92%;
+        width: 90%;
         cursor: pointer;
         text-overflow: ellipsis;
         padding-right: 0px;
@@ -238,7 +240,7 @@ footer{
     }
 }
 .restaurant__menu__card:hover {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -291,6 +293,7 @@ footer{
     100%{
         transform: rotate(720deg);
         opacity: 0;
+        z-index: -1;
         }
     }
 @keyframes spin{
@@ -299,6 +302,7 @@ footer{
     }
     100%{
         opacity: 0;
+        z-index: -1;
         }
     }
 .loading{
@@ -359,7 +363,7 @@ footer{
     }
     }
 header{
-    animation: apparition s;  
+    animation: apparition 5s;  
     }
 main{
     animation: apparition 5s;
@@ -480,7 +484,7 @@ footer{
         overflow: hidden;
         &:hover{
             .restaurant__menu__checked{
-            width: 92%;
+            width: 90%;
             cursor: pointer;
             text-overflow: ellipsis;
             padding-right: 0px;
@@ -514,7 +518,7 @@ footer{
         }
     }
     .restaurant__menu__card:hover {
-        width: 92%;
+        width: 90%;
         cursor: pointer;
         text-overflow: ellipsis;
         padding-right: 0px;
@@ -565,15 +569,17 @@ footer{
     100%{
         transform: rotate(720deg);
         opacity: 0;
+        z-index: -1;
     }
     }
 @keyframes spin{
     0%{
-        opacity: 1;
+        opacity:-1;
         
     }
     100%{
         opacity: 0;
+        z-index:-1;
     }
     }
 .loading{
@@ -755,7 +761,7 @@ footer{
             overflow: hidden;
             &:hover{
                 .restaurant__menu__checked{
-                width: 92%;
+                width: 90%;
                 cursor: pointer;
                 text-overflow: ellipsis;
                 padding-right: 0px;
@@ -789,7 +795,7 @@ footer{
             }
         }
         .restaurant__menu__card:hover {
-            width: 92%;
+            width: 90%;
             cursor: pointer;
             text-overflow: ellipsis;
             padding-right: 0px;
@@ -839,6 +845,7 @@ transform: rotate(0deg);
 100%{
 transform: rotate(720deg);
 opacity: 0;
+z-index: -1;
 }
 }
 @keyframes spin{
@@ -847,6 +854,7 @@ opacity: 1;
 }
 100%{
 opacity: 0;
+z-index: -1;
 }
 }
 .loading{
@@ -1028,7 +1036,7 @@ background: -webkit-linear-gradient($primary-color, $secondary-color);
             overflow: hidden;
             &:hover{
                 .restaurant__menu__checked{
-                width: 92%;
+                width: 90%;
                 cursor: pointer;
                 text-overflow: ellipsis;
                 padding-right: 0px;
@@ -1062,7 +1070,7 @@ background: -webkit-linear-gradient($primary-color, $secondary-color);
             }
         }
 .restaurant__menu__card:hover {
-            width: 92%;
+            width: 90%;
             cursor: pointer;
             text-overflow: ellipsis;
             padding-right: 0px;
@@ -1114,6 +1122,7 @@ background: -webkit-linear-gradient($primary-color, $secondary-color);
             100%{
                 transform: rotate(720deg);
                 opacity: 0;
+                z-index: -1;
             }
         }
 @keyframes spin{
@@ -1122,6 +1131,7 @@ background: -webkit-linear-gradient($primary-color, $secondary-color);
             }
             100%{
                 opacity: 0;
+                z-index: -1;
             }
         }
 .loading{
@@ -1305,7 +1315,7 @@ footer{
             overflow: hidden;
             &:hover{
                 .restaurant__menu__checked{
-                width: 92%;
+                width: 90%;
                 cursor: pointer;
                 text-overflow: ellipsis;
                 padding-right: 0px;
@@ -1339,7 +1349,7 @@ footer{
             }
         }
 .restaurant__menu__card:hover {
-            width: 92%;
+            width: 90%;
             cursor: pointer;
             text-overflow: ellipsis;
             padding-right: 0px;

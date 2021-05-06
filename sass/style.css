@@ -20,6 +20,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes rond {
@@ -31,6 +32,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @-webkit-keyframes spin {
@@ -39,6 +41,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes spin {
@@ -47,6 +50,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   .loading {
@@ -67,6 +71,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
+    z-index: -1;
   }
   .loading__spinner {
     width: 100px;
@@ -307,7 +312,7 @@
     overflow: hidden;
   }
   .restaurant__menu__card:hover .restaurant__menu__checked {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -343,7 +348,7 @@
     height: 80px;
   }
   .restaurant__menu__card:hover {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -398,6 +403,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes rond {
@@ -409,6 +415,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @-webkit-keyframes spin {
@@ -417,6 +424,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes spin {
@@ -425,6 +433,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   .loading {
@@ -445,6 +454,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
+    z-index: -1;
   }
   .loading__spinner {
     width: 100px;
@@ -511,8 +521,8 @@
     }
   }
   header {
-    -webkit-animation: apparition s;
-            animation: apparition s;
+    -webkit-animation: apparition 5s;
+            animation: apparition 5s;
   }
   main {
     -webkit-animation: apparition 5s;
@@ -685,7 +695,7 @@
     overflow: hidden;
   }
   .restaurant__menu__card:hover .restaurant__menu__checked {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -721,7 +731,7 @@
     height: 80px;
   }
   .restaurant__menu__card:hover {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -776,6 +786,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes rond {
@@ -787,22 +798,25 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @-webkit-keyframes spin {
     0% {
-      opacity: 1;
+      opacity: -1;
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes spin {
     0% {
-      opacity: 1;
+      opacity: -1;
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   .loading {
@@ -823,6 +837,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
+    z-index: -1;
   }
   .loading__spinner {
     width: 100px;
@@ -1063,7 +1078,7 @@
     overflow: hidden;
   }
   .restaurant__menu__card:hover .restaurant__menu__checked {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -1099,7 +1114,7 @@
     height: 80px;
   }
   .restaurant__menu__card:hover {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -1154,6 +1169,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes rond {
@@ -1165,6 +1181,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @-webkit-keyframes spin {
@@ -1173,6 +1190,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes spin {
@@ -1181,6 +1199,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   .loading {
@@ -1201,6 +1220,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
+    z-index: -1;
   }
   .loading__spinner {
     width: 100px;
@@ -1439,7 +1459,7 @@
     overflow: hidden;
   }
   .restaurant__menu__card:hover .restaurant__menu__checked {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -1475,7 +1495,7 @@
     height: 80px;
   }
   .restaurant__menu__card:hover {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -1530,6 +1550,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes rond {
@@ -1541,6 +1562,7 @@
       -webkit-transform: rotate(720deg);
               transform: rotate(720deg);
       opacity: 0;
+      z-index: -1;
     }
   }
   @-webkit-keyframes spin {
@@ -1549,6 +1571,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   @keyframes spin {
@@ -1557,6 +1580,7 @@
     }
     100% {
       opacity: 0;
+      z-index: -1;
     }
   }
   .loading {
@@ -1577,6 +1601,7 @@
         -ms-flex-align: center;
             align-items: center;
     position: fixed;
+    z-index: -1;
   }
   .loading__spinner {
     width: 100px;
@@ -1817,7 +1842,7 @@
     overflow: hidden;
   }
   .restaurant__menu__card:hover .restaurant__menu__checked {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
@@ -1853,7 +1878,7 @@
     height: 80px;
   }
   .restaurant__menu__card:hover {
-    width: 92%;
+    width: 90%;
     cursor: pointer;
     text-overflow: ellipsis;
     padding-right: 0px;
